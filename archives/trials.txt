@@ -1,0 +1,12 @@
+"Trial Number","Trial Host","Trial Location - City","Trial Location","Date of Trial","Judged by","Contact","contact email"
+1,"SDS","Santa Rosa","North School",3/26/2016 0:00:00,"Andrew Ramsey",,
+2,"SDS","Healdsburg","Healdsburg School",3/26/2016 0:00:00,"Andrew Ramsey",,
+3,"SDS","Healdsburg","Healdsburg School",3/26/2016 0:00:00,"Andrew Ramsey",,
+4,"SDS","Napa","Napa PSI",5/7/2016 0:00:00,"Jon Watson and Bill Cantrell","Rick Wood/Lea Ronald","Lea@napavalleypsi.org"
+5,"SDS","Napa","Papa PSIs",5/7/2016 0:00:00,"Jon Watson and Bill Cantrell","Rick Wood/Lea Ronald","Lea@napavalleypsi.org"
+6,"SDS","Napa","Papa PSIs",5/8/2016 0:00:00,"Jon Watson and Bill Cantrell","Rick Wood/Lea Ronald","Lea@napavalleypsi.org"
+7,"SDS","Napa","Papa PSIs",5/8/2016 0:00:00,"Jon Watson and Bill Cantrell","Rick Wood/Lea Ronald","Lea@napavalleypsi.org"
+8,"SDS","Santa Rosa","Finley Community Center
+Community
+Center",7/30/2016 0:00:00,,,
+9,"SDS","Santa Rosa","LeBallisters Seed and Fertilizer",7/31/2016 0:00:00,,,

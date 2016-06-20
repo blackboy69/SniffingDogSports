@@ -4,7 +4,10 @@
  * June 2016 by Harley H. Puthuff
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
-include_once("SDS.php");
+include_once("classes/SDS.php");
+$handler = new Handlers(1);
+Data::breakout($handler);
+exit;
 ?>
 <!DOCTYPE html>
 <html>

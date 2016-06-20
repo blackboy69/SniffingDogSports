@@ -1,0 +1,210 @@
+"SDS Dogs .","Dog's Call Name","Dog's Registration Name","Dog's Breed","Registered","A Novice Title","A Nov Containers","A Nov Area Search","A Nov Game","P Novice Title","P Novice Containers","P Novice Area Search","P Novice Game","A Advanced Title","A Adv Containers","A Adv Area Search","A Adv Game","P Advanced Title","P Advance Containers","P Advance Area Search","P Advanced Game","A Excellent Title","A Ex Containers","A Ex Area Search","A Ex Game","P Excellent Title","P Excellent Containers","P Excellent Area Search","P Excellent Game","Masters Title","Handler Number"
+1,"Ube","Lonestar Ube Early","Border Collie",1,,,,,,,,,,,,,,,,,3/19/2016 0:00:00,3/19/2016 0:00:00,3/19/2016 0:00:00,3/19/2016 0:00:00,,5/8/2016 0:00:00,,5/8/2016 0:00:00,,1
+2,"Poppy",,"Border Collie",1,,,,,,,,,,,,,,,,,,,,,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,3/19/2016 0:00:00,,2
+3,"Nickel","Blackwatch Little Lucky Nickel","Border Collie",1,,,,,,,,,,,,,,,,,,,,,,,,,,1
+4,"Cyder","Wildwind's Spyder","Labrador",1,,,,,,,,,,,,,,,,,,,,,,,,,,2
+5,"Lefty",,"Whippet",1,,,,,,,,,,,,,,,,,,,,,,,,,,5
+6,"Posie","Elkens All-Star Posie","Labrador Retreiver",1,,,,,,,,,5/8/2016 0:00:00,3/19/2016 0:00:00,5/8/2016 0:00:00,3/19/2016 0:00:00,,,,,,,,,,,,,,6
+7,"Zach",,"German Shephard Dog",1,,,,,,,,,,,,5/7/2016 0:00:00,,,,,,,,,,,,,,7
+8,"Spike-Rose Expired",,"All-American",0,,,,,,,,,,,,,,,,,,,,,,,,,,8
+9,"Annie",,"Australian Shepherd",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,9
+10,"Bonny",,"All-American",1,,,,,,,,,,,,,,,,,,,,,,,,,,9
+11,"Lewis",,"Beagle",1,,,,,,,,,,,,,,,,,,,,,,,,,,11
+12,,"Full Circle's Mission to Marzipan","Whippet",1,,,,,,,,,,,,,,,,,,,,,,,,,,12
+13,"Peanut","Blue Tick Peanut","Blue Heeler Cross",1,,,,,,,,,,,,,,,,,,,,,,,,,,13
+14,"Zeus",,"German Shepherd Dog",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,5/7/2016 0:00:00,,,,,,,,,,,,,,14
+15,"Cody","Cody","Cavachon",1,,,,,,,,,,,,,,,,,,,,,,,,,,15
+16,"Hank",,"German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,16
+17,"Amica","Primetime K9s Amica Mia vom Kraftwerk","German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,3/19/2016 0:00:00,,,,,,17
+18,"Lolly","Hisaw Loppipop Dream","Australian Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,18
+19,"Shelby",,"Shetland Sheepdog",1,,,,,,,,,,,,,,,,,,,,5/8/2016 0:00:00,,,,,,19
+20,,"Stone Coals Majestic Enzo","Labrador Retriever",1,,,,,,,,,,,,,,,,,,,,,,,,,,20
+21,"Elvis",,"All-American",1,,,,,,,,,,,,,,,,,,,3/19/2016 0:00:00,3/19/2016 0:00:00,,,,,,21
+22,"Elsa","Elsa Evans","German Shepherd Dog",1,,,,,,,,,,,,5/7/2016 0:00:00,,,,,,,,,,,,,,22
+23,"Tiger","Gem's Heard of a Tiger","Beagle",1,,,,,,,,,,,,,,,,,,,,,,,,,,23
+24,"Phoenix",,"All-American",1,,,,,,,,,,,,,,,,,,,,,,,,,,24
+25,"Roxie",,"English Cocker Spaniel",1,,,,,,,,,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,,,,,,,,,,,,,,25
+26,"Jack","Cap'n Jack","Golden Retriever",1,5/7/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,26
+27,"Taya",,"All-American",1,,,,,,,,,5/7/2016 0:00:00,3/19/2016 0:00:00,5/7/2016 0:00:00,3/19/2016 0:00:00,,,,,,,,,,,,,,27
+28,"Braux","Braux Vom Laurin","German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,28
+29,"Sadie","Miss Sadie of Ynez","Golden Retriever",1,,,,,,,,,5/8/2016 0:00:00,5/8/2016 0:00:00,3/19/2016 0:00:00,3/19/2016 0:00:00,,,,,,,,5/8/2016 0:00:00,,,,,,31
+30,"Dancer","Bear Dancer","Schipperke",1,,,,,,,,,,5/8/2016 0:00:00,,5/7/2016 0:00:00,,,,,,,,,,,,,,32
+31,"Jozzzy","Witrock's Jozzzzzelle","Doberman Pincher",1,,,,,,,,,,,,3/19/2016 0:00:00,,,,,,,,,,,,,,33
+32,"Sugar",,"All-American",1,,,,,,,,,,,,,,,,,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,,,,,,34
+33,"Daisy May","Rockville's Orange Flame","Weimaraner",1,,,,,,,,,5/8/2016 0:00:00,3/19/2016 0:00:00,5/8/2016 0:00:00,3/19/2016 0:00:00,,,,,,,,,,,,,,35
+34,"Jonah","Tanaki's Miyaki Jonah 'N Black","Portuguese Water Dog",1,5/7/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,36
+35,"Asher",,"German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,37
+36,"Amber",,"Golden Doodle",1,,,,,,,,,5/8/2016 0:00:00,3/19/2016 0:00:00,5/8/2016 0:00:00,3/19/2016 0:00:00,,,,,,,,5/8/2016 0:00:00,,,,,,38
+37,"Honey",,"Shetland Sheepdog",1,5/7/2016 0:00:00,3/20/2016 0:00:00,5/7/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,39
+38,,"Criterias Anasazi Raven","Austalian Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,40
+39,"Fire","Testimony's I'm On Fire at Anasazi","Australian Shepherd",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,40
+41,"Riley","Windfalls Heaven Sent","Australian Shepherd",1,,,,,,,,,,3/19/2016 0:00:00,,3/19/2016 0:00:00,,,,,,,,,,,,,,42
+42,"Kyrie","Hill Top Misty's Andrew Kieran","Australian Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,43
+43,"Dutch","Alouette's Heart and Soul","Malinois",1,,,,,,,,,,,,,,,,,,,,5/8/2016 0:00:00,,,,,,45
+44,"Bella","Bella","Australian Cattle Dog",1,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,46
+45,,"Little Miss Ladybug","Border Collie",1,,,,,,,,,,,,,,,,,,,,,,,,,,47
+46,"Bode","Ch. Agent's White Wold Wild Time","Samoyed",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,48
+47,"Bane",,"German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,49
+48,"McKenzee","Int'l & AM GCH Silverado Tiny Dancer 
+RE JH OJP NAP SD NRD NW1 RATI RATO SDS-SP ThD FO CGC V","Weimaraner",1,,,,,,,,,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,,,,,,,,,,,,,,50
+49,"Jezebel","Coloma's Jezebel","Catahoula Leopard Dog",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,51
+51,"Sadie",,"Australian Cattle Dog",1,,,,,,,,,,,,,,,,,,,3/19/2016 0:00:00,3/19/2016 0:00:00,,,,,,53
+52,"Tovah","Terror's Tovah of Oakleaf","Pattendale Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,54
+53,"Tara","CMC's Tara the Terror of Oakleaf","Pattendale Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,54
+54,"Yauncey","EXPIRED","Australian Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,55
+55,"Kiyoshi",,"Shetland Sheepdog",1,,,,,,,,,,5/8/2016 0:00:00,,,,,,,,,,,,,,,,56
+56,"Rookie",,"All-American",1,,,,,,,,,,,,,,,,,,,,,,,,,,57
+57,"Trace","Basquelan Big-Mtn Without a Trace","Belgian Teveran",1,,,,,,,,,,,,,,,,,,,,,,,,,,58
+58,"Serra Pat","Serra Plain & Tall","All-American",1,,,,,,,,,,,,,,,,,,,,,,,,,,58
+59,"Bella","Wedel's Bella Boo","All-American",1,5/7/2016 0:00:00,3/20/2016 0:00:00,5/7/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,59
+60,"Kerry","Heatherhill Kerry Blue","Australian Shepherd",0,,,,,,,,,,,,,,,,,,,,,,,,,,3
+61,"Lea","Heatherhill A River Runs Through Her","Australian Shepherd",0,,,,,,,,,,,,,,,,,,,,,,,,,,3
+62,"Spark","Chroma Lets Get This Show on the Road","Great Dane",0,,,,,,,,,,,,,,,,,,,,,,,,,,63
+63,"Shameera","Paraclete Venus Goddess of Love","Great Dane",0,,,,,,,,,,,,,,,,,,,,,,,,,,63
+64,"Cozy",,"Border Terrier",1,,,,,,,,,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,3/19/2016 0:00:00,,,,,,,,,,,,,,64
+65,"Mochi","Greley's Cali No MochiKata","Border Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,65
+66,"Ranger","Mistypoint Far Ranger","Labrador Retriever",1,,,,,,,,,,,,,,,,,,,,,,,,,,66
+67,"Party","Ch Foxfire's Paint the Town Red","Doberman",1,,,,,,,,,,,,5/8/2016 0:00:00,,,,,,,,,,,,,,67
+68,"Annie","Testimony to Insight","Australian Shepherd",1,,,,,,,,,,5/8/2016 0:00:00,,5/8/2016 0:00:00,,,,,,,,,,,,,,68
+69,"Will","Good Will","Border Collie",1,,,,,,,,,,,3/19/2016 0:00:00,3/19/2016 0:00:00,,,,,,,,5/8/2016 0:00:00,,,,,,69
+70,"Sheila","Pavlakovich's Sheia","German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,5/8/2016 0:00:00,,,,,,61
+71,"Pax","Paxx Vom Wustenberger-Land","German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,61
+72,"Miley","Dolroz Majic Mment v Chados","Doberman",1,,,,,,,,,,,,,,,,,,5/8/2016 0:00:00,,5/8/2016 0:00:00,,,,,,62
+73,"Mattie","Hados Private Dancer","Doberman",1,,,,,,,,,,,,,,,,,,,,,,,,,,62
+74,"Shorty",,"Toy Fox Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,4
+75,"Jake",,"Toy Fox Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,4
+76,"Stormy","Stormy","Mix",1,,,,,,,,,,,,,,,,,,,,,,,,,,70
+77,"Cole",,"German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,71
+78,"Rudy","Loveridge's Runnin Red Rogy","Standard Poodle",0,,,,,,,,,,,,,,,,,,,,,,,,,,72
+79,"Ella","Shonieh Migar's Marcella","Norwich Terrier",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,73
+80,"Auri","Chohan's Silent Things","American Pit Bull Terrier",0,,,,,,,,,,,,,,,,,,,,,,,,,,74
+81,"Kado",,"Kelpie Mix",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,75
+82,"Plyushka","Emberain I Shall Call You Squishy","Golden Retriever",0,,,,,,,,,,,,,,,,,,,,,,,,,,76
+83,"Tazzy","Rivercrest Tundras Razmataz","JRT",0,,,,,,,,,,,,,,,,,,,,,,,,,,72
+84,"Tucker",,"Aussie/Cattle Dog",0,,,,,,,,,,,,,,,,,,,,,,,,,,77
+85,"Neo","Aztecs Taledo Steel","Australian Shepherd",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,,,,,,,,,,,,,,78
+86,"Mystic","DD's Existential Dream Caatcher CGC CCA CDX RE AJP AXP","Golden Retriever",1,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,79
+87,"Moose",,"Portuguese Water Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,80
+88,"Pickle",,"Dachshund",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,29
+89,"Jet","Northlight Flying High","Shetland Sheepdog",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,81
+90,"Girlie",,"JRT",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,5/8/2016 0:00:00,5/8/2016 0:00:00,,,,,,,,,,,,,,,82
+91,"Ginger",,"Shetland Sheepdog",1,5/7/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,83
+92,"Callie",,"Italian Spinone Mix",1,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,,84
+93,"Ruby",,"Toller Mix",0,,,,,,,,,,,,,,,,,,,,,,,,,,85
+94,"Penny","Penny Smith","Australian Shepherd",1,,,,,,,,,3/19/2016 0:00:00,3/19/2016 0:00:00,3/19/2016 0:00:00,3/19/2016 0:00:00,,,,,,,,5/8/2016 0:00:00,,,,,,89
+95,"Figgy",,"Dachshund",1,,,,,,,,,,,,,,,,,,,,,,,,,,29
+96,"Cricket",,"Chiweagle",1,,,,,,,,,,,,,,,,,,,,,,,,,,29
+97,"Olive",,"Dachshund",1,,,,,,,,,,,,,,,,,,,,,,,,,,29
+98,"Kamdyn","Jevon's Kruizin's Kamdyn","Golden Retriever",1,,,,,,,,,,3/19/2016 0:00:00,,3/19/2016 0:00:00,,,,,,,,,,,,,,88
+99,"Kaydyn","GoGold's Kandu Kaydyn","Golden Retriever",1,,,,,,,,,,,,,,,,,,,,,,,,,,88
+100,"Mason","Mason","Mini Schnauzer",1,,,,,,,,,,,,3/19/2016 0:00:00,,,,,,,,,,,,,,44
+101,"Roxy","Element's Quicksilver Gambler","Malinois",1,,,,,,,,,,,,,,,,,,,,,,,,,,45
+102,"Tess","Tess","Australian Shepherd",1,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,55
+103,"Emmitt","Emmitt G","Terrier Mix",1,,,,,,,,,,,,,,,,,,,,,,,,,,87
+104,"Loba","Loba","German Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,125
+105,"Isaac","Wysoki von sontaussen","German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,118
+106,"Amber","Amber","ACD/GSD/Dalmation",1,,,,,,,,,,,,,,,,,,,,3/19/2016 0:00:00,,,,,,120
+107,"Nemo","Gueans Captain Nemo","Rottweiler",1,,,,,,,,,,,,,,,,,,,,,,,,,,122
+108,"Take","Take","Shiba Inu",1,,,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,123
+109,"Sumi","Tenshi's Sumi of Minimeadow","Kai Ken",1,,,,,,,,,,,,3/19/2016 0:00:00,,,,,,,,,,,,,,123
+110,"Fox","Fox From House Ritvis","Rottweiler",1,,,,,,,,,,,,,,,,,,,,,,,,,,116
+111,"Ranger","Riverrun The Lone Ranger MX AXJ OAP NJP XF NFP","Shetland Sheepdog",1,5/7/2016 0:00:00,5/7/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,5/7/2016 0:00:00,,,,,,,,,,,,,,,121
+112,"Finn","Finn","Bulldog/Mix",1,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,124
+113,"Clara","Clara Vom truehaus","German Shepherd Dog",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,5/8/2016 0:00:00,,5/8/2016 0:00:00,,,,,,,,,,,,,,118
+114,"Mitzi",,"All-American",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,5/8/2016 0:00:00,,,,,,,,,,,,,,8
+115,"Brody","Wildwinds Winter Solstice","Labrador Retriever",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,119
+116,"Valor","Valor von Huffnung","German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,3/19/2016 0:00:00,3/19/2016 0:00:00,,,,,,127
+117,"Scout","Little Denmark's Cheyenne","Danish/Swedish Farmdog",1,,,,,,,,,,,,,,,,,,,,,,,,,,86
+118,"Suzy","Little Denmark's Sioux Stub Butt","Danish/Swedish Farmdog",1,,,,,,,,,,,,,,,,,,,,,,,,,,86
+119,"Jay","Jento's Moving Violation","Border Collie",1,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,86
+120,"Cash","Wannago Man in Black","Whippet",1,,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,5
+121,"Starr","Cash Creek Dark Starr of Kentfield","whipet",1,,,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,5
+122,"Rowan","Eronit's Celtic Red","Labrador Retriever",1,5/7/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,24
+123,"Jenga","Soleil's Dangerously High","Boxer",1,,,,,,,,,,,,,,,,,,,,,,,,,,130
+124,"Taboo","Run Amok's Don’t Sayu It","Rottie X",1,,,,,,,,,,,,,,,,,,,,,,,,,,130
+125,"Echo","Riverun Echohawk","Shetland Sheepdog",1,,,,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,131
+126,"Rowdy",,"English Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,133
+127,"Tanner",,"Chihuahua/IG Cross",1,,,,,,,,,,,,,,,,,,,,,,,,,,133
+128,"Zim","Zim","All-American",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,132
+130,"Jezebel","Jeebel","Furry Menace",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,134
+131,"Dinky","Peter Dinklage","Chihuahua",1,,,,,,,,,,3/19/2016 0:00:00,,3/19/2016 0:00:00,,,,,,,,,,,,,,134
+132,"Ivy","Windkist Defying Gravity MX MXJ OF T2B","Beagle",1,,,,,,,,,,,,,,,,,,,,,,,,,,23
+133,"Boomer","Sparky Garcin's Boomer","Border Collie/McNab Border Collie",1,,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,13
+134,"Starbuck","Ad Astra Starbuck","Australian Shepherd",1,,,,,,,,,,5/8/2016 0:00:00,,5/8/2016 0:00:00,,,,,,,,,,,,,,135
+135,"Maggie Mae","Maggie Mae","Border Collie",1,,,,,,,,,,,,,,,,,,,,,,,,,,135
+136,"Twist","Hereabout Tangled Up In Blue","Shetland Sheepdog",1,,,,,,,,,,,,,,,,,,,,,,,,,,19
+137,"Quincy","Hereabout Basie and Beyond","Shetland Sheepdog",1,,,,,,,,,,,,,,,,,,,,,,,,,,136
+138,"Philly","Kimberlite Philly","Jack Russell Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,139
+139,"Madison","Ch Rockville's Silver Day On The Mound","Weimaraner",1,,,,,,,,,,,,,,,,,,,,,,,,,,129
+140,"Gromit","Mi-Kel's Inventor Rescuer","Belgian Sheepdog",1,,,,,,,,,,,,3/19/2016 0:00:00,,,,,,,,,,,,,,140
+141,"Tango","Isengard's Aviator","Belgian Sheepdog",1,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,140
+142,"Hannah","Heavenly Hannah RE CGC","English Springer Spaniel",1,,,5/7/2016 0:00:00,3/20/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,141
+143,"Jett",,"Belgian Malinois",1,,,,,,,,,,,,,,,,,,,,3/19/2016 0:00:00,,,,,,142
+144,"Sierra",,"Labrador Retriever",1,,,,,,,,,,,,,,,,,,,,,,,,,,144
+145,"Rocky",,"Labrador Retriever",1,,,,,,,,,,,,,,,,,,,,,,,,,,146
+146,"Princess",,"Terrier Mix",1,,,,,,,,,,,,,,,,,,,,,,,,,,147
+147,"Topaz","Anasha Tozaz","South African Boerboel",1,,,,,,,,,,,,,,,,,,,,,,,,,,147
+148,"Jaster","Jasper","Australian Shepherd",1,,,,,,,,,,,5/8/2016 0:00:00,,,,,,,,,,,,,,,148
+149,"Paige","Flash Fires Amazing Luv Story","Belgian Tervuren",1,,,,,,,,,,,,5/8/2016 0:00:00,,,,,,,,,,,,,,149
+150,"Ki-enne","Ch Snowflower Makes It Spicy for FlashFire","Belgian Tervuren",1,,,,,,,,,,,,,,,,,,,,,,,,,,149
+151,"Vibe","FlashFire's Good Vibrations via Showflower","Belgian Tervuren",1,,,,,,,,,,,,,,,,,,,,,,,,,,149
+152,"Zoe","Zoe of the High Sierra","Minature Poodle",1,,,,,,,,,,,,,,,,,,,,,,,,,,143
+153,"Remi","Karbits Play My Blue Heaven","Minature Poodle",1,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,,143
+154,"Beau","Brocair's Beau Babe At High Hills","Lakeland Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,152
+155,"Piper","Brocair's Pied Piper At High Hills","Lakeland Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,152
+156,"Fixx","Fixxation","Border Collie",1,,,,,,,,,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,154
+157,"Big Mo","DC Avita Moet & Chandon TD, CD MC RA","Whippet",1,,,,,,,,,,,,,,,,,,,,,,,,,,155
+158,"Spicy","Vaquero's Hot 'N Spicy","Australian Sheepdog",1,,,,,,,,,,,,,,,,,,,,,,,,,,156
+159,"Ruger","Storm du Loups du Soleil","Belgian Malinois",1,,,,,,,,,,,,,,,,,,,,,,,,,,157
+160,"Jolie","Jolie","Bichon Frise",1,,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,,,158
+161,"Noel","Ch. Clarion Sweet Noelani","Mini Poodle",1,,,,,,,,,,,,5/8/2016 0:00:00,,,,,,,,,,,,,,159
+162,"George","Ch. Clarion Dark Side Of The Moon","Mini Poodle",1,,,,,,,,,,,,,,,,,,,,,,,,,,159
+163,"Tally","Ch. Clarion Tallahassee Dreamin","Mini Poodle",1,,,,,,,,,,,,,,,,,,,,,,,,,,159
+164,"Tess","Vivid's Goin Full Tilt","Mini Poodle",1,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,,160
+165,"Kimber","Ravenshadow's Infinite Justice","Belgian Malinois",1,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,161
+166,"Riley","Riley","Goldendoodle",1,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,162
+167,"Rea","Rea","All-American",1,,,,,,,,,,,,,,,,,,,,,,,,,,163
+168,"Tango","Vrijheid's Tango","Dutch Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,164
+169,"Diesel","Jenta's Turbo Diesel","Border Collie",1,,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,,,165
+170,"Matt",,"Corgie",1,,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,,166
+171,"Gracie","Gracie","MacNab Mix",1,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,167
+174,"Dreamz","Ch. Foxfire's Moments of Illusion","Doberman",1,,,,,,,,,,,,,,,,,,,,,,,,,,67
+175,"Tango","Vrijheid's Tango","Dutch Shepherd",1,,,,,,,,,,,5/7/2016 0:00:00,,,,,,,,,,,,,,,169
+176,"Solo","Stonepine Solaris","Australiah Shepherd",1,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,5/7/2016 0:00:00,,,,,,,,,,,,,,,,,,,,,,18
+177,"Tule","Sandy Oak's I'll be True to you","Chesapeake Bay Retriever",1,,,,,,,,,,,,,,,,,,,,,,,,,,170
+178,"Rudy","Larcan's Reading with Rudy","Lagatto Romagnolo",1,,,,,,,,,,,,,,,,,,,,,,,,,,171
+179,"Batman",,"Jack Russell Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,172
+180,"Kona",,"Jack Russell Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,172
+182,"Dori","Dorinda vom Sonnenschein","Hovawart",1,,,,,,,,,,,,,,,,,,,,,,,,,,60
+183,"Amsie","Amsel vom Koenigs-hof","Hovawart",1,,,,,,,,,,,,,,,,,,,,,,,,,,60
+184,"Squink",,"Kelpie",1,,,,,,,,,,,,,,,,,,,,,,,,,,173
+185,"Cali","Alamode California Blues","Standard Poodle",1,,,,,,,,,,,,,,,,,,,,,,,,,,174
+186,"Macy","Macy Let's Go Shopping","Golden Retreiver",1,,,,,,,,,,,,,,,,,,,,,,,,,,175
+187,"Tippet","Cutwater Dreams of White Top Tip Tail","Portuguese Water Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,176
+188,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,176
+189,"River","Redtop River","Border Collie",1,,,,,,,,,,,,,,,,,,,,,,,,,,177
+190,"T","Wingwatcher bridge the territory","Golden Retriever",1,,,,,,,,,,,,,,,,,,,,,,,,,,177
+191,"Lance","Chisterling Sir Lancelot II","Shetland Sheepdog",1,,,,,,,,,,,,,,,,,,,,,,,,,,178
+192,"Mia","Q'Mia von Sentinel Harts","German Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,179
+193,"Mimi","Saljaxx Little Red Menace Mini","Brittany",1,,,,,,,,,,,,,,,,,,,,,,,,,,180
+194,"Sophie","BGs Ozukuri Chrysanthemum","Havanses",1,,,,,,,,,,,,,,,,,,,,,,,,,,
+195,"Yogi","Yogi","Labrador Retriever",1,,,,,,,,,,,,,,,,,,,,,,,,,,181
+196,"Zorro","Yankee v temar","German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,182
+197,"Abby","Abby","Jack Russell Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,183
+198,"Topaz","2G Rose's Unexpected Pleasure","Australian Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,184
+199,"Takoda","Sierra Rose Risky Biznes@2G Rose","Australian Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,184
+200,"Xavier",,"All-American",1,,,,,,,,,,,,,,,,,,,,,,,,,,186
+201,"Emeril","Ch Walmar-Solo Food for Thought","Dashshund",1,,,,,,,,,,,,,,,,,,,,,,,,,,188
+202,"Olive","Bravehearts Valentinev Boonday","Dashshund",1,,,,,,,,,,,,,,,,,,,,,,,,,,188
+203,"Dave","Dave Magdalena","Penbroke Welsh Corgi",1,,,,,,,,,,,,,,,,,,,,,,,,,,189
+204,"Laz","Laxaretto du Fosseret","Belgian Tervuren",1,,,,,,,,,,,,,,,,,,,,,,,,,,191
+205,"Cali","Vom Herzen's California Sunshine","Rottweiler",1,,,,,,,,,,,,,,,,,,,,,,,,,,192
+206,"Shooter","Genworks Full Bodied Shot of Java","Rottweiler",1,,,,,,,,,,,,,,,,,,,,,,,,,,192
+207,"Torme",,"Labrador Retriever",1,,,,,,,,,,,,,,,,,,,,,,,,,,187
+208,"Maggie",,"German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,185
+209,"Willow","Glenlair Wind in the Willows","Border Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,194
+210,"Flyer","Ak Ranch Fly Like the Wind","Australian Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,195
+211,"Pink","Hi C=-Era with Glitter in the Air","Border Collie",1,,,,,,,,,,,,,,,,,,,,,,,,,,195
+212,"Larry","Alfred av Stavanger","German Shepherd Dog",1,,,,,,,,,,,,,,,,,,,,,,,,,,196
+213,"Mac","Mattson's Macintosh","West Highland West Terrier",1,,,,,,,,,,,,,,,,,,,,,,,,,,197
+214,"Bailey",,"Australian Shepherd",1,,,,,,,,,,,,,,,,,,,,,,,,,,198
