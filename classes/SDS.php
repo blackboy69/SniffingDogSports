@@ -6,6 +6,10 @@
  */
 include_once("ClassLibrary/Medusa.php");
 
+// our database connector:
+
+$db = new Databoss("localhost","sds");
+
 // Nomenclature:
 
 $SDS = new Object;
