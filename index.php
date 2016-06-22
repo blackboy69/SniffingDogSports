@@ -5,18 +5,14 @@
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 include_once("classes/SDS.php");
-$handler = new Handlers(1);
-Data::breakout($handler);
-exit;
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title><?="{$SDS->name} {$SDS->version}"?></title>
 </head>
-<body>
+<body style="text-align:center">
 	<h1><?="{$SDS->name} {$SDS->version}"?></h1>
-	<h2><?="cwd: ".Medusa::$scriptPath?></h2>
-	<h2><?="lib: ".Medusa::$libraryPath?></h2>
+	<h2>Coming soon !</h2>
 </body>
 </html>
