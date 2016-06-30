@@ -7,7 +7,7 @@
 include_once("classes/SDS.php");
 ?>
 <!DOCTYPE html>
-<html>
+<html class="pageColor">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -21,9 +21,13 @@ include_once("classes/SDS.php");
     <link href="/yourshowcase/ClassLibrary/bootstrap/css/bootstrap.lumen.min.css" rel="stylesheet">
     <link href="/sds.members.css" rel="stylesheet">
 </head>
-<body>
+<body class="pageColor">
+
+<div id="wrap"><div id="main" clear-top>
+
+<div id="navigationSection"><!--begin navigation section-->
 	
-<nav class="navbar navbar-default plaque">
+<nav class="navbar navbar-default plaqueColor">
 	<div class="container-fluid">
 		<div class="navbar-header">
 		<a class="navbar-brand" href="#"><?=$SDS->brand?></a>
@@ -34,25 +38,27 @@ include_once("classes/SDS.php");
 			<li><a href="#">Our Mission</a></li>
 			<li><a href="#">Our Services</a></li>
 			<li><a href="#">Register</a></li>
+			<li><a href="#">Contact Us</a></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
 				   accesskey="" aria-expanded="false">Pages <span class="caret"></span></a>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
+					<li><a href="#">Home page</a></li>
+					<li><a href="#">Our Mission</a></li>
+					<li><a href="#">Our Services</a></li>
 					<li class="divider"></li>
-					<li><a href="#">Separated link</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Contact Us</a></li>
 					<li class="divider"></li>
-					<li><a href="#">One more separated link</a></li>
+					<li><a href="#">Login</a></li>
 				</ul>
 			</li>
 		</ul>
 		<form class="navbar-form navbar-left" role="search">
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search">
+				<input type="text" class="form-control" placeholder="Search for ...">
 			</div>
-			<button type="submit" class="btn btn-success">Submit</button>
+			<button type="submit" class="btn btn-default">Search</button>
 		</form>
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#">Login</a></li>
@@ -61,8 +67,20 @@ include_once("classes/SDS.php");
 	</div>
 </nav>
 
-	<div><?="{$SDS->brand} {$SDS->version}"?></div>
-	<div>Coming soon !</div>
+</div><!--end navigation section-->
+
+<!--begin main content section-->
+	<h1><?="{$SDS->brand} {$SDS->version}"?></h1>
+	<h2>Coming soon !</h2>
+<!--end main content section-->
+
+</div></div>
+
+<footer id="footerSection" class="footer"><!--begin footer section-->
+	<?="$SDS->brand &bull; $SDS->description &bull; $SDS->version &bull; $SDS->copyright"?>
+</footer><!--end footer section-->
+
+<!--javascript & code goes here-->
 
 <script type="text/javascript" src="/jquery/jquery.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
