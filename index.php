@@ -45,7 +45,7 @@ include_once("classes/SDS.php");
 				<ul class="dropdown-menu" role="menu">
 					<li><a href="#">Home page</a></li>
 					<li><a href="#">Our Mission</a></li>
-					<li><a href="#">Our Services</a></li>
+					<li><a href="#">Our Trials</a></li>
 					<li class="divider"></li>
 					<li><a href="#">Register</a></li>
 					<li><a href="#">Contact Us</a></li>
@@ -61,7 +61,8 @@ include_once("classes/SDS.php");
 			<button type="submit" class="btn btn-default">Search</button>
 		</form>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#">Login</a></li>
+			<li><button class="btn btn-success" style="margin-top:8px">Login</button></li>
+			<!--li><a href="#" class="btn btn-sm btn-default">Login</a></li-->
 		</ul>
     </div>
 	</div>
@@ -70,10 +71,26 @@ include_once("classes/SDS.php");
 </div><!--end navigation section-->
 
 <!--begin main content section-->
-	<h1><?="{$SDS->brand} {$SDS->version}"?></h1>
-	<h2>Coming soon !</h2>
-<!--end main content section-->
+<div id="containerSection" class="container-fluid">
+<div class="row">
 
+	<!--begin sidebar section-->
+	<div id="sidebarSection" class="col-md-3" style="border:1px solid">
+		<h2>Sidebar</h2>
+		<div id="clock"></div>
+	</div>
+	<!--end sidebar section-->
+
+	<!--begin content section-->
+	<div id="contentSection" class="col-md-9">
+		<h1><?="{$SDS->brand} {$SDS->version}"?></h1>
+		<h2>Coming soon !</h2>
+	</div>
+	<!--end content section-->
+		
+</div>
+</div>
+<!--end main content section-->
 </div></div>
 
 <footer id="footerSection" class="footer"><!--begin footer section-->
