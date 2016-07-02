@@ -123,7 +123,7 @@ include_once("classes/SDS.php");
 			<ul>
 				<li>The odors are the traditional birch, anise, and clove.</li>
 				<li>There are four challenging levels of competition.</li>
-				<li>Handlers may “bank” every qualifying scoring toward a title.</li>
+				<li>Handlers may &ldquo;bank&rdquo; every qualifying scoring toward a title.</li>
 				<li>Handlers may enter trials at any level they choose regardless of titles
 					earned in other organizations.</li>
 				<li>No ORT is required to leap in.</li>
