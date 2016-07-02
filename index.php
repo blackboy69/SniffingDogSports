@@ -7,7 +7,7 @@
 include_once("classes/SDS.php");
 ?>
 <!DOCTYPE html>
-<html class="pageColor">
+<html class="pageBG">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -21,13 +21,13 @@ include_once("classes/SDS.php");
     <link href="/yourshowcase/ClassLibrary/bootstrap/css/bootstrap.lumen.min.css" rel="stylesheet">
     <link href="/sds.members.css" rel="stylesheet">
 </head>
-<body class="pageColor">
+<body class="pageBG">
 
 <div id="wrap"><div id="main" clear-top>
 
 <div id="navigationSection"><!--begin navigation section-->
 	
-<nav class="navbar navbar-default plaqueColor">
+<nav class="navbar navbar-default plaqueBG">
 	<div class="container-fluid">
 		<div class="navbar-header">
 		<a class="navbar-brand" href="#"><?=$SDS->brand?></a>
@@ -85,16 +85,65 @@ include_once("classes/SDS.php");
 <div class="row">
 
 	<!--begin sidebar section-->
-	<div id="sidebarSection" class="col-md-3" style="border:1px solid">
-		<h2>Sidebar</h2>
+	<div id="sidebarSection" class="col-md-3">
+		<div class="plaque">
+			<div class="headline">Status Content</div>
+			<div class="content">
+				<p>The content in this container is particular to the current
+				state of the user/browser. This can be public, member or
+				administrator.</p>
+				<p>For a member, for instance, you will see highlights of their
+				membership account--including a summary list of dogs &amp; titles.</p>
+				<br><br><br><br><br>
+				<center><img src="/media/AnnieSearching.jpg" class="rounded shadowed"></center>
+				<br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+		</div>
 		<div id="clock"></div>
 	</div>
 	<!--end sidebar section-->
 
 	<!--begin content section-->
 	<div id="contentSection" class="col-md-9">
-		<h1><?="{$SDS->brand} {$SDS->version}"?></h1>
-		<h2>Coming soon !</h2>
+
+		<div class="plaque"><div class="content" style="font-size:large">
+			<img src="/media/banner.jpg" width="100%" style="margin-bottom:1em">
+			<h1 class="hiliteColor">Sniffing Dog Sports Nosework Titling Program</h1>
+    		<p>Welcome!</p>
+			<p>Sniffing Dog Sports (SDS) is a sanctioning organization for the sport of Nosework.
+			   SDS is dedicated to meeting the growing demand for opportunities to compete in
+			   sport detection.</p>
+			<p>Sniffing Dog Sports (SDS) was developed with two clear goals in mind:</p>
+			<ol>
+				<li>To provide searches that mirror professional work and innovative sniffing games</li>
+				<li>To create a friendly and inclusive organization with a reputation for being
+					approachable and having a sense of humor</li>
+			</ol>
+			<p>SDS offers many benefits:</p>
+			<ul>
+				<li>The odors are the traditional birch, anise, and clove.</li>
+				<li>There are four challenging levels of competition.</li>
+				<li>Handlers may “bank” every qualifying scoring toward a title.</li>
+				<li>Handlers may enter trials at any level they choose regardless of titles
+					earned in other organizations.</li>
+				<li>No ORT is required to leap in.</li>
+				<li>The trial chair and key volunteers may compete in their own trials.</li>
+				<li>We believe in our motto &#8211; We are serious about sniffing but we are not serious.
+			</ul>
+			<p>Join SDS right away and join the fun. For a lifetime registration for your dog
+				and an annual registration for yourself, click on any Register link.</p>
+			<p style="text-align:center;">
+				<button class="btn btn-lg btn-primary"
+					title="Click to Register as a Member"><span
+					class="glyphicon glyphicon-edit"></span> Register</button>
+				&nbsp;&nbsp;
+				<button class="btn btn-lg btn-success"
+					title="Click to Login as a Member"><span
+					class="glyphicon glyphicon-lock"></span> Login</button>
+			</p>
+			<p>&nbsp;</p>
+		</div></div>
+		
 	</div>
 	<!--end content section-->
 		

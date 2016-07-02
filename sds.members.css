@@ -4,11 +4,51 @@
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 
+/* misc. styles */
 html,body		{height: 100%;}
 #wrap			{min-height: 100%;}
 #main			{overflow: auto; padding-bottom: 150px;}
 .footer			{position: relative; margin-top: -150px;
 				 height: 150px; clear: both; padding-top: 20px;}
 
-.pageColor		{color: white; background-color: #94af6f; text-align: center;}
-.plaqueColor	{color: navy; background-color: rgb(243,231,214);}
+/* colors and/or special */
+.pageBG			{color: white; background-color: #94af6f; text-align: center;}
+.plaqueBG		{color: navy; background-color: rgb(243,231,214);}
+.hiliteFG		{color: #0D66BF;}
+.blackFG		{color: black;}
+.crimsonFG		{color: crimson;}
+#clock			{font-size: 90%;}
+.rounded {
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -khtml-border-radius: 24px;
+    border-radius: 24px;
+	}
+.shadowed {
+	border-top: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+	box-shadow: 3px 3px silver;		
+	}
+
+/* plaque container */
+.plaque {
+	width: auto; height: auto;
+	text-align: left;
+	border-radius: 8px;
+	background-color: rgb(243,231,214);
+	color: navy;
+	border-top: 1px solid gainsboro; border-left: 1px solid gainsboro;
+	box-shadow: 3px 3px silver;
+	}
+.plaque .headline {
+	font-weight: bold;
+	color: white;
+	background-color: cadetblue;
+	height: 2em;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	padding: 5px;
+	}
+.plaque .content {
+	margin: .5em 1em;
+	}
