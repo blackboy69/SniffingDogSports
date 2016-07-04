@@ -5,8 +5,7 @@
  */
 
 /* misc. styles */
-html,body		{height: 100%;}
-#footerSection	{height: 150px; clear: both; padding-top: 20px;}
+html,body		{}
 
 /* colors and/or special */
 .pageBG			{color: navy; background-color: #94af6f; text-align: center;}
