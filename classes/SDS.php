@@ -15,8 +15,14 @@ $db = new Databoss("localhost","sds");
 $SDS = new Object;
  $SDS->brand		= "Sniffing Dog Sports";
  $SDS->description	= "Members Site";
- $SDS->version		= "v1.1, July 2016";
+ $SDS->version		= "v1.2, July 2016";
  $SDS->copyright	= "Copyright 2016, Sniffing Dog Sports, LLC";
+ $SDS->contacts		= array(
+	"Harley Puthuff"	=> "harley@yourshowcase.net"
+	 );
+ $SDS->address		= array(
+	
+	);
  
 // application control:
 

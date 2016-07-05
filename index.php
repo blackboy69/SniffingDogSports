@@ -98,6 +98,23 @@ function dispatcher(destination,source,passdata) {
 	section.load(scriptName,passdata);
 	}
 
+// return to the home page for the mode in use:
+
+function returnHome() {
+	var homePage;
+	if (mode == 'p')
+		homePage = 'publicSplash';
+	else
+	if (mode == 'm')
+		homePage = 'memberSplash';
+	else
+	if (mode == 'a')
+		homePage = 'adminSplash';
+	else
+		homePage = 'publicSplash';
+	dispatcher('contentSection',homePage);
+	}
+
 // we are loading all the things:
 
 $(document).ready(function(){

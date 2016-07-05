@@ -18,7 +18,8 @@ include_once("classes/SDS.php");
 		</div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#" title="Return to the Home page"
+			<li><a href="#" title="Return to the Home page"
+				   onclick="dispatcher('contentSection','publicSplash')"
 				><span class="glyphicon glyphicon-home"></span> Home<span
 				  class="sr-only">(current)</span></a></li>
 			<li><a href="#" title="Who we are and why we do this"><span
@@ -27,7 +28,8 @@ include_once("classes/SDS.php");
 					class="glyphicon glyphicon-time"></span> Our Trials</a></li>
 			<li><a href="#" title="Register with Sniffing Dog Sports"><span
 					class="glyphicon glyphicon-edit"></span> Register</a></li>
-			<li><a href="#" title="Contact us via Email, Phone and Mail"><span
+			<li><a href="#" onclick="dispatcher('contentSection','contact')"
+				   title="Contact us via Email, Phone and Mail"><span
 					class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
