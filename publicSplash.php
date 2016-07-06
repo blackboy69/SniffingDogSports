@@ -41,6 +41,7 @@ include_once("classes/SDS.php");
 			class="glyphicon glyphicon-edit"></span> Register</button>
 		&nbsp;&nbsp;
 		<button class="btn btn-lg btn-success"
+			onclick="dispatcher('contentSection','login')"
 			title="Click to Login as a Member"><span
 			class="glyphicon glyphicon-lock"></span> Login</button>
 	</p>

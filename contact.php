@@ -55,13 +55,13 @@ Message.......: $message
 <div class="plaque" style="margin-top:2em;width:70%;">
 	<div class="headline">Contact Us</div>
 	<div class="content">
+		<img src="/media/writing.png" width="160" style="float:right">
 		<h3 class='hiliteFG'>We'd love to hear from you and welcome your comments,
-			suggestions &amp; questions. Please fill in each of the values in the
-			contact form below and we'll use that information to get your inquiry
+			suggestions &amp; questions. We'll use your information to get your inquiry
 			to one of our administrators. Thanks!</h3>
-		<form id="contactform" class="form-horizontal">
+		<form id="contactform" class="form-horizontal" style="clear:both">
 		<fieldset>
-		<legend>Please fill in the spaces below and click [SUBMIT]</legend><br>
+		<legend style="font-style:italic">Please fill in the spaces below and click [SUBMIT]</legend><br>
 		<div class="form-group">
 			<label for="inputName" class="col-lg-2 control-label">Name:</label>
 			<div class="col-lg-10">

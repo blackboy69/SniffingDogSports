@@ -42,9 +42,9 @@ include_once("classes/SDS.php");
 					<li><a href="#">Our Trials</a></li>
 					<li class="divider"></li>
 					<li><a href="#">Register</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="#" onclick="dispatcher('contentSection','contact')">Contact Us</a></li>
 					<li class="divider"></li>
-					<li><a href="#">Login</a></li>
+					<li><a href="#" onclick="dispatcher('contentSection','login')">Login</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -57,6 +57,7 @@ include_once("classes/SDS.php");
 		</form>
 		<ul class="nav navbar-nav navbar-right">
 			<li><button class="btn btn-success" style="margin-top:8px"
+					onclick="dispatcher('contentSection','login')"
 					title="Click to Login"><span
 					class="glyphicon glyphicon-lock"></span> Login</button></li>
 		</ul>
