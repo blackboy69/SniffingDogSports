@@ -28,11 +28,10 @@ $SDS = new Object;
 
 session_start();
 if (!isset($_SESSION['mode'])) {
-	$_SESSION['mode'] = 'p';	// assume public mode
-	$_SESSION['handler'] = 0;
-	$_SESSION['dog'] = 0;
-	$_SESSION['trial'] = 0;
+	$_SESSION['mode']		= 'p';	// assume public mode
+	$_SESSION['handler']	= null;
+	$_SESSION['dog']		= null;
+	$_SESSION['trial']		= null;
 	}
-
 
 ?>
