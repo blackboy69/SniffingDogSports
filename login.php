@@ -5,6 +5,7 @@
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 include_once("classes/SDS.php");
+include_once("passwordLib.php");
 
 // login flags:
 
@@ -52,6 +53,7 @@ while ($validSubmission) {
 	<div class="headline"><?=$loginMessage?></div>
 	<div class="content">
 		<h3 class='hiliteFG'>Successful Login to <?=$SDS->brand?></h3>
+		<p>&nbsp;</p>
 	</div>
 </div>
 
@@ -62,18 +64,7 @@ handler = "<?=$_SESSION['handler']?>";	// set the handler ID
 dog = "<?=$_SESSION['dog']?>";			// set the dog ID
 trial = "<?=$_SESSION['trial']?>";		// set the trial ID
 // pause and then load all the things
-setTimeout(function () {
-	if (mode == 'm') {
-		dispatcher("navigationSection","navigator");
-		dispatcher("sidebarSection","memberSidebar");
-		dispatcher("contentSection","memberSummary");
-		}
-	else {
-		dispatcher("navigationSection","navigator");
-		dispatcher("sidebarSection","adminSidebar");
-		dispatcher("contentSection","adminSummary");
-		}
-    },1000);
+setTimeout(loadAllTheThings,1000);
 </script>
 
 <? } else { ?>

@@ -119,12 +119,31 @@ function returnHome() {
 	dispatcher('contentSection',homePage);
 	}
 
+// load the 'panes' for the mode in use at the time:
+
+function loadAllTheThings() {
+	if (mode == 'm') {		// member mode
+		dispatcher("navigationSection","navigator");
+		dispatcher("sidebarSection","memberSidebar");
+		dispatcher("contentSection","memberSummary");
+		}
+	else
+	if (mode == 'a') {		// administrator mode
+		dispatcher("navigationSection","navigator");
+		dispatcher("sidebarSection","adminSidebar");
+		dispatcher("contentSection","adminSummary");
+		}
+	else {					// public mode
+		dispatcher("navigationSection","navigator");
+		dispatcher("sidebarSection","publicSidebar");
+		dispatcher("contentSection","publicSplash");
+		}
+	}
+
 // we are loading all the things:
 
 $(document).ready(function(){
-	dispatcher("navigationSection","navigator");
-	dispatcher("sidebarSection","publicSidebar");
-	dispatcher("contentSection","publicSplash");
+	loadAllTheThings();
 	showClock();
 	});
 
