@@ -88,7 +88,7 @@ include_once("classes/SDS.php");
 		<ul class="nav navbar-nav">
 
 			<li><a href="#" title="Account summary"
-					onclick="dispatcher('contentSection','publicSplash')"><span
+					onclick="dispatcher('contentSection','memberSummary')"><span
 					class="glyphicon glyphicon-th-list"></span> Summary<span
 					class="sr-only">(current)</span></a></li>
 
@@ -137,7 +137,7 @@ include_once("classes/SDS.php");
 		<ul class="nav navbar-nav">
 			
 			<li><a href="#" title="Database summary"
-				   onclick="dispatcher('contentSection','publicSplash')"><span
+				   onclick="dispatcher('contentSection','adminSummary')"><span
 				   class="glyphicon glyphicon-th-list"></span> Summary<span
 				   class="sr-only">(current)</span></a></li>
 			

@@ -6,44 +6,80 @@
  */
 include_once("classes/SDS.php");
 
+// login flags:
+
+$validSubmission = array_key_exists('email',$_REQUEST);
+$validMember = false;
 $validLogin = false;
+$loginMessage = "Login to {$SDS->brand}";
 
 // if we have form data, verify the login:
 
-if (array_key_exists('email',$_REQUEST)) {
+while ($validSubmission) {
 	$email = $_REQUEST['email'];
 	$password = $_REQUEST['password'];
+	$handler = Handlers::fetchByEmail($email);
+	if (! $handler) {
+		$loginMessage = "** No Such Member on file !!";
+		break;
+		}
+	if ($handler->status != 'Active') {
+		$loginMessage = "** This Member is NOT Active !!";
+		break;
+		}
+	$validMember = true;
+	if (!password_verify($password,$handler->password)) {
+		$loginMessage = "** Invalid Member Password !!";
+		break;
+		}
+	$validLogin = true;
+	$loginMessage = "Welcome ! ".$handler->fullname();
+	$_SESSION['mode'] =
+		($handler->type=='Administrator' || $handler->type=='Developer') ? 'a' : 'm';
+	$_SESSION['handler'] = $handler->handler;
+	$_SESSION['dog'] = null;
+	$_SESSION['trial'] = null;
+	break;
 	}
 
 ?>
 
+<center>
+
 <? if ($validLogin) { ?>
 
-<center>
 <div class="plaque" style="margin-top:2em;width:70%;">
-	<div class="headline">Thanks for your inquiry !</div>
+	<div class="headline"><?=$loginMessage?></div>
 	<div class="content">
-		<h3 class='hiliteFG'>Your information has been sent and you will
-			receive a response shortly.</h3>
-		<center>
-		<table style="color:maroon;width:90%;font-size:12pt;">
-			<caption><u>Information Submitted</u></caption>
-			<tbody>
-				<tr><td>Your name:</td><td><?=$name?></td></tr>
-				<tr><td>Email address:&nbsp;</td><td><?=$email?></td></tr>
-				<tr><td>Message:</td><td><?=$message?></td></tr>
-			</tbody>
-		</table><br>
-		</center>
+		<h3 class='hiliteFG'>Successful Login to <?=$SDS->brand?></h3>
 	</div>
 </div>
-</center>
+
+<script type="text/javascript">
+// setup for member or administrator
+mode = "<?=$_SESSION['mode']?>";		// set the mode
+handler = "<?=$_SESSION['handler']?>";	// set the handler ID
+dog = "<?=$_SESSION['dog']?>";			// set the dog ID
+trial = "<?=$_SESSION['trial']?>";		// set the trial ID
+// pause and then load all the things
+setTimeout(function () {
+	if (mode == 'm') {
+		dispatcher("navigationSection","navigator");
+		dispatcher("sidebarSection","memberSidebar");
+		dispatcher("contentSection","memberSummary");
+		}
+	else {
+		dispatcher("navigationSection","navigator");
+		dispatcher("sidebarSection","adminSidebar");
+		dispatcher("contentSection","adminSummary");
+		}
+    },1000);
+</script>
 
 <? } else { ?>
 
-<center>
 <div class="plaque" style="margin-top:2em;width:70%;">
-	<div class="headline">Login</div>
+	<div class="headline"><?=$loginMessage?></div>
 	<div class="content">
 		<img src="/media/login.png" width="160" style="float:right">
 		<h3 class='hiliteFG'>Login here to access:
@@ -85,7 +121,6 @@ if (array_key_exists('email',$_REQUEST)) {
 		</form>
 	</div>
 </div>
-</center>
 
 <script type="text/javascript">
 
@@ -104,7 +139,6 @@ function postFormData(theform) {
 		$(field).focus();
 		return false;
 		}
-alert("not just yet..."); return false;
 	dispatcher("contentSection","login",formData);
 	}
 
@@ -115,3 +149,4 @@ $("#loginEmail").focus();
 
 <? } ?>
 
+</center>

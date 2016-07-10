@@ -10,6 +10,18 @@ class Handlers extends Container {
 	public $database	= "sds";
 	public $table		= "handlers";
 
+// fetch a Handler record by email address:
+	
+static public function fetchByEmail($email=null) {
+	global $db;
+	if (! $email) return null;
+	return $db->fetchObject("
+		SELECT * FROM sds.handlers h
+		WHERE h.email LIKE '$email'
+		LIMIT 1
+		","Handlers");
+	}
+
 // Return full name as: [Mr/Ms] First last
 
 public function fullname() {

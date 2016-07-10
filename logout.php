@@ -26,5 +26,11 @@ $_SESSION['trial']		= null;
 </center>
 
 <script type="text/javascript">
-	mode = 'p';	// back to public mode
+mode = 'p';	// back to public mode
+handler = dog = trial = null;
+dispatcher("navigationSection","navigator");
+dispatcher("sidebarSection","publicSidebar");
+setTimeout(function () {
+	dispatcher("contentSection","publicSplash");
+    },1000);
 </script>
