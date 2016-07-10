@@ -18,7 +18,9 @@ $SDS = new Object;
  $SDS->version		= "v1.2, July 2016";
  $SDS->copyright	= "Copyright 2016, Sniffing Dog Sports, LLC";
  $SDS->contacts		= array(
-	"Harley Puthuff"	=> "harley@yourshowcase.net"
+	"Harley Puthuff"	=> "harley@yourshowcase.net",
+	"Lauren Leach"		=> "laurieleach@comcast.net",
+	"Donna Goleman"		=> "donnagk9@gmail.com"
 	 );
  $SDS->address		= array(
 	
