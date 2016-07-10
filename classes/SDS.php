@@ -27,11 +27,28 @@ $SDS = new Object;
 // application control:
 
 session_start();
+
+// set up public mode if none present:
 if (!isset($_SESSION['mode'])) {
-	$_SESSION['mode']		= 'p';	// assume public mode
+	$_SESSION['mode']		= 'p';
 	$_SESSION['handler']	= null;
 	$_SESSION['dog']		= null;
 	$_SESSION['trial']		= null;
+	}
+
+// if we have a logged-in member, load their profile
+if ($_SESSION['handler']) {
+	$handler = new Handlers($_SESSION['handler']);
+	}
+
+// if we have a dog being referenced, load the profile
+if ($_SESSION['dog']) {
+	$dog = new Dogs($_SESSION['dog']);
+	}
+
+// if we have a trial being referenced, load the profile
+if ($_SESSION['trial']) {
+	$trial = new Trials($_SESSION['trial']);
 	}
 
 ?>

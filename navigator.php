@@ -6,9 +6,6 @@
  */
 include_once("classes/SDS.php");
 
-if ($_SESSION['handler'])	// load handler (if available)
-	$handler = new Handlers($_SESSION['handler']);
-
 ?>
 
 <? if ($_SESSION['mode'] == 'p') { ?>

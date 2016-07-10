@@ -57,9 +57,13 @@ include_once("classes/SDS.php");
 <script type="text/javascript" src="/jquery/jquery.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript">
-// mode of the application:
 
-var mode = "<?=$_SESSION['mode']?>";
+// application-wide variables:
+
+var mode = "<?=$_SESSION['mode']?>";		// current mode: null,p,m or a
+var handler = "<?=$_SESSION['handler']?>";	// current handler id
+var dog = "<?=$_SESSION['dog']?>";			// current dog id
+var trial = "<?=$_SESSION['trial']?>";		// current trial id
 
 // create a current date string:
 
