@@ -15,7 +15,7 @@ include_once("classes/SDS.php");
 	</div>
 	<div class="content" style="font-size:large;color:black;">
 		<h1 class="hiliteFG">Summary of your Membership</h1>
-		<p style="text-align:center;">
+		<!--p style="text-align:center;">
 			<button class="btn btn-lg btn-primary"
 				title="Click to Register as a Member"><span
 				class="glyphicon glyphicon-edit"></span> Register
@@ -26,7 +26,7 @@ include_once("classes/SDS.php");
 				title="Click to Login as a Member"><span
 				class="glyphicon glyphicon-lock"></span> Login
 			</button>
-		</p>
+		</p-->
 		<p>&nbsp;</p>
 	</div>
 </div>
