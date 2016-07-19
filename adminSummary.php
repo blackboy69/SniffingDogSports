@@ -14,7 +14,28 @@ include_once("classes/SDS.php");
 		<?=$SDS->brand." &bull; Administrative / Database Summary"?>
 	</div>
 	<div class="content" style="font-size:large;color:black;">
-		<h1 class="hiliteFG">Summary of Our Database</h1>
+		<h2 class="hiliteFG">Summary of Our Database</h2>
+		<center>
+		<div class="well" style="width:70%">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th>Name of Table:</th>
+					<th># Records:</th>
+				</tr>
+			</thead>
+			<tbody>
+			<?php
+				foreach ($db->statistics() as $name=>$records) {
+					$tableName = ucfirst($name);
+					echo "<tr><td>$tableName</td><td>$records</td></tr>\n";
+					}
+			?>
+			</tbody>
+		</table>
+		</div>
+		</center>
+
 		<!--p style="text-align:center;">
 			<button class="btn btn-lg btn-primary"
 				title="Click to Register as a Member"><span
