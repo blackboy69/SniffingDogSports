@@ -19,25 +19,25 @@ $loginMessage = "Login to {$SDS->brand}";
 while ($validSubmission) {
 	$email = $_REQUEST['email'];
 	$password = $_REQUEST['password'];
-	$handler = Handlers::fetchByEmail($email);
-	if (! $handler) {
+	$member = Members::fetchByEmail($email);
+	if (! $member) {
 		$loginMessage = "** No Such Member on file !!";
 		break;
 		}
-	if ($handler->status != 'Active') {
+	if ($member->status != 'Active') {
 		$loginMessage = "** This Member is NOT Active !!";
 		break;
 		}
 	$validMember = true;
-	if (!password_verify($password,$handler->password)) {
+	if (!password_verify($password,$member->password)) {
 		$loginMessage = "** Invalid Member Password !!";
 		break;
 		}
 	$validLogin = true;
-	$loginMessage = "Welcome ! ".$handler->fullname();
+	$loginMessage = "Welcome ! ".$member->fullname();
 	$_SESSION['mode'] =
-		($handler->type=='Administrator' || $handler->type=='Developer') ? 'a' : 'm';
-	$_SESSION['handler'] = $handler->handler;
+		($member->type=='Administrator' || $member->type=='Developer') ? 'a' : 'm';
+	$_SESSION['member'] = $member->member;
 	$_SESSION['dog'] = null;
 	$_SESSION['trial'] = null;
 	break;
@@ -60,7 +60,7 @@ while ($validSubmission) {
 <script type="text/javascript">
 // setup for member or administrator
 mode = "<?=$_SESSION['mode']?>";		// set the mode
-handler = "<?=$_SESSION['handler']?>";	// set the handler ID
+member = "<?=$_SESSION['member']?>";	// set the member ID
 dog = "<?=$_SESSION['dog']?>";			// set the dog ID
 trial = "<?=$_SESSION['trial']?>";		// set the trial ID
 // pause and then load all the things

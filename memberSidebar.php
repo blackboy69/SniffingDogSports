@@ -10,7 +10,7 @@ include_once("classes/SDS.php");
 <!--public sidebar content-->
 
 <div class="plaque">
-	<div class="headline"><?=$handler->fullname()?></div>
+	<div class="headline"><?=$member->fullname()?></div>
 	<div class="content">
 	<br><br><br>
 	<center>

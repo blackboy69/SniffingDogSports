@@ -82,7 +82,7 @@ include_once("classes/SDS.php");
 <nav class="navbar navbar-default plaqueBG">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#"><?=$handler->fullname()?></a>
+			<a class="navbar-brand" href="#"><?=$member->fullname()?></a>
 		</div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">
@@ -131,7 +131,7 @@ include_once("classes/SDS.php");
 <nav class="navbar navbar-default plaqueBG">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#"><?=$handler->fullname()." [admin]"?></a>
+			<a class="navbar-brand" href="#"><?=$member->fullname()." [admin]"?></a>
 		</div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		<ul class="nav navbar-nav">

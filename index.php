@@ -61,7 +61,7 @@ include_once("classes/SDS.php");
 // application-wide variables:
 
 var mode = "<?=$_SESSION['mode']?>";		// current mode: null,p,m or a
-var handler = "<?=$_SESSION['handler']?>";	// current handler id
+var member = "<?=$_SESSION['member']?>";	// current member id
 var dog = "<?=$_SESSION['dog']?>";			// current dog id
 var trial = "<?=$_SESSION['trial']?>";		// current trial id
 

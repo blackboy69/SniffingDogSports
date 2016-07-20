@@ -7,7 +7,7 @@
 include_once("classes/SDS.php");
 
 $_SESSION['mode']		= 'p';	// return to public mode
-$_SESSION['handler']	= null;
+$_SESSION['member']	= null;
 $_SESSION['dog']		= null;
 $_SESSION['trial']		= null;
 

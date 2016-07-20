@@ -11,7 +11,7 @@ include_once("classes/SDS.php");
 
 <div class="plaque">
 	<div class="headline">
-		<?=$handler->fullname()." &bull; Member Summary"?>
+		<?=$member->fullname()." &bull; Member Summary"?>
 	</div>
 	<div class="content" style="font-size:large;color:black;">
 		<h1 class="hiliteFG">Summary of your Membership</h1>

@@ -1,14 +1,14 @@
 <?php
 /**
- * Sniffing Dog Sports - Handlers class
+ * Sniffing Dog Sports - Members class
  * June 2016 by Harley H. Puthuff
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 
-class Handlers extends Container {
+class Members extends Container {
 
 	public $database	= "sds";
-	public $table		= "handlers";
+	public $table		= "members";
 
 // fetch a Handler record by email address:
 	
@@ -16,10 +16,10 @@ static public function fetchByEmail($email=null) {
 	global $db;
 	if (! $email) return null;
 	return $db->fetchObject("
-		SELECT * FROM sds.handlers h
-		WHERE h.email LIKE '$email'
+		SELECT * FROM sds.members m
+		WHERE m.email LIKE '$email'
 		LIMIT 1
-		","Handlers");
+		","Members");
 	}
 
 // Return full name as: [Mr/Ms] First last

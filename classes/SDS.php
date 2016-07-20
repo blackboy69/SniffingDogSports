@@ -33,14 +33,14 @@ session_start();
 // set up public mode if none present:
 if (!isset($_SESSION['mode'])) {
 	$_SESSION['mode']		= 'p';
-	$_SESSION['handler']	= null;
+	$_SESSION['member']		= null;
 	$_SESSION['dog']		= null;
 	$_SESSION['trial']		= null;
 	}
 
 // if we have a logged-in member, load their profile
-if ($_SESSION['handler']) {
-	$handler = new Handlers($_SESSION['handler']);
+if ($_SESSION['member']) {
+	$member = new Members($_SESSION['member']);
 	}
 
 // if we have a dog being referenced, load the profile
