@@ -18,8 +18,9 @@ include_once("classes/SDS.php");
     <meta name='copyright' content='Copyright 2016. All Rights Reserved.'>
     <title><?="{$SDS->brand} {$SDS->version}"?></title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link href="/yourshowcase/ClassLibrary/bootstrap/css/bootstrap.lumen.min.css" rel="stylesheet">
-    <link href="/sds.members.css" rel="stylesheet">
+    <link href="/yourshowcase/ClassLibrary/bootstrap/css/bootstrap.lumen.min.css" rel="stylesheet" />
+	<link href="/yourshowcase/ClassLibrary/bootstrap/NewsScroller/css/site.css"	rel="stylesheet" type="text/css" />
+    <link href="/sds.members.css" rel="stylesheet" />
 </head>
 <body class="pageBG">
 
@@ -56,6 +57,10 @@ include_once("classes/SDS.php");
 
 <script type="text/javascript" src="/jquery/jquery.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript"
+	src="/yourshowcase/ClassLibrary/bootstrap/NewsScroller/scripts/jquery.bootstrap.newsbox.min.js"
+	type="text/javascript"></script>
+
 <script type="text/javascript">
 
 // application-wide variables:
