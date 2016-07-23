@@ -49,3 +49,11 @@ html,body		{}
 .plaque .content {
 	margin: .5em 1em;
 	}
+
+/* changes to bootstrap classes */
+.modal {
+    position: fixed;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}

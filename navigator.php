@@ -15,9 +15,16 @@ include_once("classes/SDS.php");
 <nav class="navbar navbar-default plaqueBG">
 	<div class="container-fluid">
 		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#publicNavbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
 			<a class="navbar-brand" href="#"><?=$SDS->brand?></a>
 		</div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="publicNavbar">
 		<ul class="nav navbar-nav">
 
 			<li><a href="#" title="Return to the Home page"
@@ -82,9 +89,16 @@ include_once("classes/SDS.php");
 <nav class="navbar navbar-default plaqueBG">
 	<div class="container-fluid">
 		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#memberNavbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
 			<a class="navbar-brand" href="#"><?=$member->fullname()?></a>
 		</div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="memberNavbar">
 		<ul class="nav navbar-nav">
 
 			<li><a href="#" title="Account summary"
@@ -131,9 +145,16 @@ include_once("classes/SDS.php");
 <nav class="navbar navbar-default plaqueBG">
 	<div class="container-fluid">
 		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#adminNavbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
 			<a class="navbar-brand" href="#"><?=$member->fullname()." [admin]"?></a>
 		</div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="adminNavbar">
 		<ul class="nav navbar-nav">
 			
 			<li><a href="#" title="Database summary"

@@ -53,6 +53,31 @@ include_once("classes/SDS.php");
 </div>
 <!--end footer section-->
 
+<!--dialog box / pop-up-->
+<!--show the modeal
+	$('#dialogBox').modal('show');
+and hide with:
+	$('#dialogBox').modal('hide');
+-->
+<div class="modal fade" id="dialogBox">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="text-align:left;">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">Modal title</h3>
+      </div>
+      <div class="modal-body">
+        <p>One fine body</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end dialog box section-->
+
 <!--javascript & code goes here-->
 
 <script type="text/javascript" src="/jquery/jquery.js"></script>
@@ -115,10 +140,10 @@ function returnHome() {
 		homePage = 'publicSplash';
 	else
 	if (mode == 'm')
-		homePage = 'memberSplash';
+		homePage = 'memberSummary';
 	else
 	if (mode == 'a')
-		homePage = 'adminSplash';
+		homePage = 'adminSummary';
 	else
 		homePage = 'publicSplash';
 	dispatcher('contentSection',homePage);
