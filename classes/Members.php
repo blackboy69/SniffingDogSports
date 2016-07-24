@@ -28,6 +28,13 @@ class Members extends Container {
 		"Deleted"
 		);
 
+// member salutations:
+	public static $salutations = array(
+		"Mr",
+		"Mrs",
+		"Ms"
+		);
+
 // fetch a Handler record by email address:
 	
 static public function fetchByEmail($email=null) {

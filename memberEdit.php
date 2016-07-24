@@ -18,35 +18,141 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 	<div class="content" style="font-size:large;color:black;">
 		<h3 class="hiliteFG">Membership Profile</h3>
 		<p>&nbsp;</p>
-		<form class="form-horizontal">
+		<form class="form-horizontal" onsubmit="return false">
 		<fieldset>
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="memberID"></label>
+			<label class="col-md-4 control-label" for="member_id"></label>
 			<div class="col-md-4">
 				<div class="input-group">
 					<span class="input-group-addon">Membership #</span>
-					<input id="memberID" name="member" class="form-control"
+					<input id="member_id" name="member" class="form-control"
 						value="<?=$member->member?>" type="text" readonly>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="referenced_id"></label>  
+			<div class="col-md-4">
+				<div class="input-group">
+					<span class="input-group-addon">Updated at</span>
+					<input id="referenced_id" name="referenced" type="text"
+						class="form-control" value="<?=$referenced?>" readonly>
 				</div>
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="type_id">Type</label>
 			<div class="col-md-4">
-				<?=Html::select("type",Members::$types,$member->type,true,"form-control")?>
+	<?=Html::select("type",Members::$types,$member->type,true,"form-control input-lg")?>
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="status_id">Status</label>
 			<div class="col-md-4">
-				<?=Html::select("status",Members::$statuses,$member->status,true,"form-control")?>
+	<?=Html::select("status",Members::$statuses,$member->status,true,"form-control input-lg")?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="referencedID">Changed</label>  
+			<label class="col-md-4 control-label" for="salutation_id">Salutation</label>
+			<div class="col-md-4">
+	<?=Html::select("salutation",Members::$salutations,$member->salutation,true,"form-control input-lg")?>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="firstname_id">First name</label>  
 			<div class="col-md-5">
-				<input id="referencedID" name="referenced" type="text"
-					class="form-control input-md" value="<?=$referenced?>" readonly>
+				<input id="firstname_id" name="firstname" type="text"
+					class="form-control input-lg" value="<?=$member->firstname?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="lastname_id">Last name</label>  
+			<div class="col-md-5">
+				<input id="lastname_id" name="lastname" type="text"
+					class="form-control input-lg" value="<?=$member->lastname?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="address_id">Address</label>  
+			<div class="col-md-5">
+				<input id="address_id" name="address" type="text"
+					class="form-control input-lg" value="<?=$member->address?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="city_id">City</label>  
+			<div class="col-md-5">
+				<input id="city_id" name="city" type="text"
+					class="form-control input-lg" value="<?=$member->city?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="state_id">State</label>
+			<div class="col-md-4">
+	<?=Html::selectState("state",$member->state,"form-control input-lg")?>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="zip_id">Zip/Post code</label>  
+			<div class="col-md-5">
+				<input id="zip_id" name="zip" type="text"
+					class="form-control input-lg" value="<?=$member->zip?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="homephone_id">Home phone</label>  
+			<div class="col-md-5">
+				<input id="homephone_id" name="homephone" type="text"
+					class="form-control input-lg" value="<?=$member->homephone?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="mobilephone_id">Mobile phone</label>  
+			<div class="col-md-5">
+				<input id="mobilephone_id" name="mobilephone" type="text"
+					class="form-control input-lg" value="<?=$member->mobilephone?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="email_id">E-mail</label>  
+			<div class="col-md-5">
+				<input id="email_id" name="email" type="text"
+					class="form-control input-lg" value="<?=$member->email?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="password_id">Password</label>  
+			<div class="col-md-5">
+				<input id="password_id" name="password" type="password"
+					class="form-control input-lg" value="<?=$member->password?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="joined_id">Joined</label>  
+			<div class="col-md-5">
+				<input id="joined_id" name="joined" type="text"
+					class="form-control input-lg" value="<?=$member->joined?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="renewed_id">Renewed</label>  
+			<div class="col-md-5">
+				<input id="renewed_id" name="renewed" type="text"
+					class="form-control input-lg" value="<?=$member->renewed?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="charge_id">Charge</label>  
+			<div class="col-md-5">
+				<input id="charge_id" name="charge" type="text"
+					class="form-control input-lg" value="<?=$member->charge?>">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="notes_id">Notes</label>
+			<div class="col-md-4">                     
+				<textarea class="form-control input-lg" id="notes_id"
+					name="notes"><?=$member->notes?></textarea>
 			</div>
 		</div>
 		<div class="form-group">
