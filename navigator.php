@@ -38,7 +38,8 @@ include_once("classes/SDS.php");
 			<li><a href="#" title="Events we sponsor and score"><span
 					class="glyphicon glyphicon-time"></span> Our Trials</a></li>
 			
-			<li><a href="#" title="Register with Sniffing Dog Sports"><span
+			<li><a href="#" title="Register with Sniffing Dog Sports"
+				   onclick="dispatcher('contentSection','memberEdit')"><span
 					class="glyphicon glyphicon-edit"></span> Register</a></li>
 			
 			<li><a href="#" title="Contact us via Email"
@@ -106,7 +107,8 @@ include_once("classes/SDS.php");
 					class="glyphicon glyphicon-th-list"></span> Summary<span
 					class="sr-only">(current)</span></a></li>
 
-			<li><a href="#" title="View / Change your Member Profile"><span
+			<li><a href="#" title="View / Change your Member Profile"
+				    onclick="dispatcher('contentSection','memberEdit')"><span
 					class="glyphicon glyphicon-user"></span> Your Profile</a></li>
 
 			<li><a href="#" title="View / Change your Dogs"><span

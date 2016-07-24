@@ -10,6 +10,24 @@ class Members extends Container {
 	public $database	= "sds";
 	public $table		= "members";
 
+// member types:
+	public static $types = array(
+		"Member",
+		"Judge",
+		"Sponsor",
+		"Administrator",
+		"Special",
+		"Developer"
+		);
+
+// member statuses:
+	public static $statuses = array(
+		"Active",
+		"inactive",
+		"Suspended",
+		"Deleted"
+		);
+
 // fetch a Handler record by email address:
 	
 static public function fetchByEmail($email=null) {

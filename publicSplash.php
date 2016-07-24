@@ -37,6 +37,7 @@ include_once("classes/SDS.php");
 		and an annual registration for yourself, click on any Register link.</p>
 	<p style="text-align:center;">
 		<button class="btn btn-lg btn-primary"
+			onclick="dispatcher('contentSection','memberEdit')"
 			title="Click to Register as a Member"><span
 			class="glyphicon glyphicon-edit"></span> Register</button>
 		&nbsp;&nbsp;

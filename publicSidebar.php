@@ -27,7 +27,7 @@ include_once("classes/SDS.php");
 			<li class="news-item">
 				<span class="glyphicon glyphicon-calendar"></span>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Nullam in venenatis enim... <a href="#">Read more...</a>
+				Nullam in venenatis enim... <a href="#" onclick="$('#dialogBox').modal('show');">Read more...</a>
 			</li>
 			<li class="news-item">
 				<span class="glyphicon glyphicon-calendar"></span>

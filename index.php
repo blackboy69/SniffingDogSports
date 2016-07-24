@@ -18,8 +18,10 @@ include_once("classes/SDS.php");
     <meta name='copyright' content='Copyright 2016. All Rights Reserved.'>
     <title><?="{$SDS->brand} {$SDS->version}"?></title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link href="/yourshowcase/ClassLibrary/bootstrap/css/bootstrap.lumen.min.css" rel="stylesheet" />
-	<link href="/yourshowcase/ClassLibrary/bootstrap/NewsScroller/css/site.css"	rel="stylesheet" type="text/css" />
+    <link href="/yourshowcase/ClassLibrary/bootstrap/css/bootstrap.lumen.min.css"
+		  rel="stylesheet" />
+	<link href="/yourshowcase/ClassLibrary/bootstrap/NewsScroller/css/site.css"
+		  rel="stylesheet" type="text/css" />
     <link href="/sds.members.css" rel="stylesheet" />
 </head>
 <body class="pageBG">
@@ -53,7 +55,7 @@ include_once("classes/SDS.php");
 </div>
 <!--end footer section-->
 
-<!--dialog box / pop-up-->
+<!--dialog box / pop-up section-->
 <!--show the modeal
 	$('#dialogBox').modal('show');
 and hide with:
@@ -63,7 +65,8 @@ and hide with:
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header" style="text-align:left;">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
         <h3 class="modal-title">Modal title</h3>
       </div>
       <div class="modal-body">
