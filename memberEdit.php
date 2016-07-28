@@ -5,7 +5,13 @@
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 include_once("classes/SDS.php");
-$fullname = $member ? $member->fullname() : "";
+if ($member) {
+	$fullname = $member->fullname();
+	$member->getDogs();
+	}
+else {
+	$fullname = "";
+	}
 $referenced = Date::toExternal($member->referenced,LONGDATE);
 ?>
 
@@ -134,6 +140,14 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 					class="form-control input-lg" value="<?=$member->joined?>">
 			</div>
 		</div>
+			
+		<div class="form-group">
+			<label class="col-md-4 control-label">Dogs</label>
+			<div class="col-md-7">
+				<?=$member->listDogs()?>
+			</div>
+		</div>
+			
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="renewed_id">Renewed</label>  
 			<div class="col-md-5">

@@ -5,6 +5,7 @@
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 include_once("/yourshowcase/ClassLibrary/Medusa.php");
+include_once("passwordLib.php");
 
 // our database connector:
 

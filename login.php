@@ -5,7 +5,6 @@
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 include_once("classes/SDS.php");
-include_once("passwordLib.php");
 
 // login flags:
 
@@ -29,7 +28,7 @@ while ($validSubmission) {
 		break;
 		}
 	$validMember = true;
-	if (!password_verify($password,$member->password)) {
+	if (! $member->verifyPassword($password)) {
 		$loginMessage = "** Invalid Member Password !!";
 		break;
 		}
