@@ -56,7 +56,7 @@ include_once("classes/SDS.php");
 					<li><a href="#">Our Mission</a></li>
 					<li><a href="#">Our Trials</a></li>
 					<li class="divider"></li>
-					<li><a href="#">Register</a></li>
+					<li><a href="#" onclick="dispatcher('contentSection','memberEdit')">Register</a></li>
 					<li><a href="#" onclick="dispatcher('contentSection','contact')">Contact Us</a></li>
 					<li class="divider"></li>
 					<li><a href="#" onclick="dispatcher('contentSection','login')">Login</a></li>

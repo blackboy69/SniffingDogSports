@@ -5,14 +5,18 @@
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 include_once("classes/SDS.php");
+
 if ($member) {
 	$fullname = $member->fullname();
 	$member->getDogs();
+	$sectionHeading = "Membership Profile";
 	}
 else {
 	$fullname = "";
+	$sectionHeading = "Membership Application";
 	}
 $referenced = Date::toExternal($member->referenced,LONGDATE);
+
 ?>
 
 <!--member summary page/section-->
@@ -22,10 +26,13 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 		<?="$fullname &bull; Member Profile"?>
 	</div>
 	<div class="content" style="font-size:large;color:black;">
-		<h3 class="hiliteFG">Membership Profile</h3>
+		<h3 class="hiliteFG"><?=$sectionHeading?></h3>
 		<p>&nbsp;</p>
 		<form class="form-horizontal" onsubmit="return false">
 		<fieldset>
+
+<? if ($member->member) { ?>
+
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="member_id"></label>
 			<div class="col-md-4">
@@ -49,19 +56,47 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="type_id">Type</label>
 			<div class="col-md-4">
-	<?=Html::select("type",Members::$types,$member->type,true,"form-control input-lg")?>
+				<?=Html::select(
+					"type",
+					Members::$types,
+					$member->type,
+					true,
+					"form-control input-lg"
+					)?>
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="status_id">Status</label>
 			<div class="col-md-4">
-	<?=Html::select("status",Members::$statuses,$member->status,true,"form-control input-lg")?>
+				<?=Html::select(
+					"status",
+					Members::$statuses,
+					$member->status,
+					true,
+					"form-control input-lg"
+					)?>
 			</div>
 		</div>
+
+<? } else { ?>
+
+		<input type="hidden" id="member_id" name="member">
+		<input type="hidden" id="referenced_id" name="referenced">
+		<input type="hidden" id="type_id" name="type" value="Member">
+		<input type="hidden" id="status_id" name="status" value="Active">
+
+<? } ?>
+
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="salutation_id">Salutation</label>
 			<div class="col-md-4">
-	<?=Html::select("salutation",Members::$salutations,$member->salutation,true,"form-control input-lg")?>
+				<?=Html::select(
+					"salutation",
+					Members::$salutations,
+					$member->salutation,
+					true,
+					"form-control input-lg"
+					)?>
 			</div>
 		</div>
 		<div class="form-group">
@@ -95,7 +130,11 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="state_id">State</label>
 			<div class="col-md-4">
-	<?=Html::selectState("state",$member->state,"form-control input-lg")?>
+				<?=Html::selectState(
+					"state",
+					$member->state,
+					"form-control input-lg"
+					)?>
 			</div>
 		</div>
 		<div class="form-group">
@@ -133,6 +172,16 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 					class="form-control input-lg" value="<?=$member->password?>">
 			</div>
 		</div>
+
+<? if ($member->member) { ?>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label">Dogs</label>
+			<div class="col-md-7">
+				<?=$member->listDogs()?>
+			</div>
+		</div>
+
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="joined_id">Joined</label>  
 			<div class="col-md-5">
@@ -140,14 +189,6 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 					class="form-control input-lg" value="<?=$member->joined?>">
 			</div>
 		</div>
-			
-		<div class="form-group">
-			<label class="col-md-4 control-label">Dogs</label>
-			<div class="col-md-7">
-				<?=$member->listDogs()?>
-			</div>
-		</div>
-			
 		<div class="form-group">
 			<label class="col-md-4 control-label" for="renewed_id">Renewed</label>  
 			<div class="col-md-5">
@@ -169,10 +210,16 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 					name="notes"><?=$member->notes?></textarea>
 			</div>
 		</div>
+
+<? } ?>
+
 		<div class="form-group">
 			<div class="col-md-8" style="text-align:center;">
-				<button id="submitID" name="update" class="btn btn-primary">Submit</button>
-			    <button id="cancelID" name="cancel" class="btn btn-default">Cancel</button>
+				<button type="submit" id="submitID" name="update"
+					class="btn btn-primary">Submit</button>
+			    <button type="reset" id="cancelID" name="cancel"
+					onclick="returnHome();return false;"
+					class="btn btn-default">Cancel</button>
 			</div>
 		</div>
 		</fieldset>
