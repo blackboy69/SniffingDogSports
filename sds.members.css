@@ -15,6 +15,7 @@ html,body		{}
 .crimsonFG		{color: crimson;}
 #clock			{font-size: 90%;}
 .bigtext		{font-size: 150%;}
+.required		{color: red;}
 .rounded {
     -moz-border-radius: 24px;
     -webkit-border-radius: 24px;

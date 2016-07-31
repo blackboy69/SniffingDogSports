@@ -10,7 +10,11 @@ $haveFormData = array_key_exists('email',$_REQUEST) ? true : false;
 
 // if we have form data, send to the email(s) for SDS:
 
-if ($haveFormData) {
+while ($haveFormData) {
+	if ($_REQUEST['captcha'] != $_SESSION['captcha']) {
+		$haveFormData = false;
+		break;
+		}
 	$name = $_REQUEST['name'];
 	$email = $_REQUEST['email'];
 	$message = $_REQUEST['message'];
@@ -79,6 +83,15 @@ Message.......: $message
 			<div class="col-lg-10">
 				<textarea class="form-control" rows="5" id="inputMessage"></textarea>
 				<span class="help-block">Enter your message in the space above</span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-lg-2 control-label required" for="captcha_id">Enter the code</label>  
+			<div class="col-lg-10">
+				<img src="/yourshowcase/media/captcha" style="vertical-align:middle">
+				Please enter this number below
+				<input id="captcha_id" name="captcha" type="text"
+					class="form-control input-lg" value="">
 			</div>
 		</div>
         <div class="form-group">
