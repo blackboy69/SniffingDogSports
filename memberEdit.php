@@ -20,6 +20,7 @@ if ($_REQUEST['email']) {
 	$member->merge($_REQUEST);
 	$member->referenced = null;
 	$member->store();
+	$_SESSION['member'] = $member->member;
  	}
 
 if ($member) {
@@ -36,15 +37,24 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 
 <? if ($formSubmitted) { ?>
 
-<div class='plaque'>
-	<div class='headline'>
-		Member <?=$member->member?> has been recorded
-	</div>
-	<div class='content'>
-		<p>Member ID: <?=$member->member?></p>
-		<p>Member Name: <?=$fullname?></p>
+<center>
+<div class="plaque" style="margin-top:2em;width:70%;">
+	<div class="headline">Member profile updated</div>
+	<div class="content">
+		<h3 class='hiliteFG'>Member profile has been updated.</h3>
+		<center>
+		<table style="color:maroon;width:90%;font-size:12pt;">
+			<caption><u>Information Submitted</u></caption>
+			<tbody>
+				<tr><td>Member ID:</td><td><?=$member->member?></td></tr>
+				<tr><td>Member Full Name:</td><td><?=$member->fullname()?></td></tr>
+				<tr><td>Member Status:</td><td><?=$member->status?></td></tr>
+			</tbody>
+		</table><br>
+		</center>
 	</div>
 </div>
+</center>
 
 <? } else { ?>
 
