@@ -52,13 +52,14 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			</tbody>
 		</table><br>
 	<? if ($_SESSION['mode']=='p' and $member->status=='Pending') { ?>
-		<h3 class='hiliteFG'>Your payment options:</h3>
-		<button id="paypal_id" name="paypal"
-			class="btn btn-primary">Pay with a Credit Card</button>
+		<h3 class='hiliteFG'>Click below to proceed with payment</h3>
+		<button id="payment_id" name="payment"
+			onclick="alert('Coming soon ...')"
+			class="btn btn-primary">Pay Membership Fees</button>
 		&nbsp;&nbsp;
-		<button id="bycheck_id" name="bycheck"
+		<button id="notnow_id" name="notnow"
 			onclick="returnHome()"
-			class="btn btn-primary">Pay with a Bank Check</button>
+			class="btn btn-default">Skip for now</button>
 			<br><br>
 	<? } ?>
 		</center>
