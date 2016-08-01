@@ -51,6 +51,16 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 				<tr><td>Member Status:</td><td><?=$member->status?></td></tr>
 			</tbody>
 		</table><br>
+	<? if ($_SESSION['mode']=='p' and $member->status=='Pending') { ?>
+		<h3 class='hiliteFG'>Your payment options:</h3>
+		<button id="paypal_id" name="paypal"
+			class="btn btn-primary">Pay with a Credit Card</button>
+		&nbsp;&nbsp;
+		<button id="bycheck_id" name="bycheck"
+			onclick="returnHome()"
+			class="btn btn-primary">Pay with a Bank Check</button>
+			<br><br>
+	<? } ?>
 		</center>
 	</div>
 </div>
