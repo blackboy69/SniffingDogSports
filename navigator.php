@@ -99,7 +99,7 @@ include_once("classes/SDS.php");
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?=$member->fullname()?></a>
+			<a class="navbar-brand" href="#"><?=$member->fullname()." [".$member->status."]"?></a>
 		</div>
     <div class="collapse navbar-collapse" id="memberNavbar">
 		<ul class="nav navbar-nav">
