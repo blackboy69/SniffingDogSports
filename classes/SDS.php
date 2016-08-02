@@ -24,7 +24,10 @@ $SDS = new Object;
 	"Donna Goleman"		=> "donnagk9@gmail.com"
 	 );
  $SDS->address		= array(
-	
+	"LeBallister’s Seed and Fertilizer",
+	"Attention:  Kelly Boyer",
+	"1250 Sebastopol Rd",
+	"Santa Rosa, CA 95407"
 	);
  
 // application control:

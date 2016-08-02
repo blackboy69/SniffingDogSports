@@ -67,14 +67,14 @@ and hide with:
       <div class="modal-header" style="text-align:left;">
         <button type="button" class="close" data-dismiss="modal"
 				aria-hidden="true">&times;</button>
-        <h3 class="modal-title">Modal title</h3>
+        <h3 id="dialogHeading" class="modal-title">Modal title</h3>
       </div>
-      <div class="modal-body">
+      <div id="dialogContent" class="modal-body">
         <p>One fine body</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!--button type="button" class="btn btn-primary">Save changes</button-->
       </div>
     </div>
   </div>
@@ -171,6 +171,29 @@ function loadAllTheThings() {
 		dispatcher("sidebarSection","publicSidebar");
 		dispatcher("contentSection","publicSplash");
 		}
+	}
+
+// function/service not currently available:
+//	what = what is unavailable (string)
+
+function unavailable(what) {
+	var heading = "Service Unavailable:";
+	var content =
+		"<h2>We're sorry, but the '" +
+		what +
+		"' service is currently unavailable or " +
+		"is in development.<br><br>Please check back soon!</h2>";
+	startDialog(heading,content);
+	}
+
+// make dialog box visible with customization
+//	heading = string for header
+//	content = html string for content or url
+
+function startDialog(heading,content) {
+	$('#dialogHeading').text(heading);
+	$('#dialogContent').html(content);
+	$('#dialogBox').modal('show');
 	}
 
 // we are loading all the things:

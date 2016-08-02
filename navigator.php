@@ -32,10 +32,12 @@ include_once("classes/SDS.php");
 				   class="glyphicon glyphicon-home"></span> Home<span
 				   class="sr-only">(current)</span></a></li>
 
-			<li><a href="#" title="Who we are and why we do this"><span
+			<li><a href="#" title="Who we are and why we do this"
+				   onclick="unavailable('Our Mission')"><span
 					class="glyphicon glyphicon-globe"></span> Our Mission</a></li>
 			
-			<li><a href="#" title="Events we sponsor and score"><span
+			<li><a href="#" title="Events we sponsor and score"
+				   onclick="unavailable('Our Trials')"><span
 					class="glyphicon glyphicon-time"></span> Our Trials</a></li>
 			
 			<li><a href="#" title="Register with Sniffing Dog Sports"
@@ -52,9 +54,9 @@ include_once("classes/SDS.php");
 				   accesskey="" aria-expanded="false"><span
 					class="glyphicon glyphicon-th-list"></span> Site Map <span class="caret"></span></a>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="#">Home page</a></li>
-					<li><a href="#">Our Mission</a></li>
-					<li><a href="#">Our Trials</a></li>
+					<li><a href="#" onclick="returnHome()">Home page</a></li>
+					<li><a href="#" onclick="unavailable('Our Mission')">Our Mission</a></li>
+					<li><a href="#" onclick="unavailable('Our Trials')">Our Trials</a></li>
 					<li class="divider"></li>
 					<li><a href="#" onclick="dispatcher('contentSection','memberEdit')">Register</a></li>
 					<li><a href="#" onclick="dispatcher('contentSection','contact')">Contact Us</a></li>
@@ -111,10 +113,12 @@ include_once("classes/SDS.php");
 				    onclick="dispatcher('contentSection','memberEdit')"><span
 					class="glyphicon glyphicon-user"></span> Your Profile</a></li>
 
-			<li><a href="#" title="View / Change your Dogs"><span
+			<li><a href="#" title="Manage your Dogs"
+				   onclick="unavailable('Manage your Dogs')"><span
 					class="glyphicon glyphicon-heart"></span> Your Dogs</a></li>
 
-			<li><a href="#" title="Trials and Results"><span
+			<li><a href="#" title="Trials and Results"
+				   onclick="unavailable('Trials and Results')"><span
 					class="glyphicon glyphicon-time"></span> Trials</a></li>
 
 			<li><a href="#" title="Contact us via Email"
@@ -164,25 +168,32 @@ include_once("classes/SDS.php");
 				   class="glyphicon glyphicon-th-list"></span> Summary<span
 				   class="sr-only">(current)</span></a></li>
 			
-			<li><a href="#" title="Review / Change Members"><span
+			<li><a href="#" title="Manage Members"
+				   onclick="unavailable('Manage Members')"><span
 					class="glyphicon glyphicon-user"></span> Our Members</a></li>
 			
-			<li><a href="#" title="Schedule / Review Trials"><span
+			<li><a href="#" title="Manage Trials"
+					onclick="unavailable('Manage Trials')"><span
 					class="glyphicon glyphicon-time"></span> Our Trials</a></li>
 			
-			<li><a href="#" title="Review Titles / Standings"><span
+			<li><a href="#" title="Review Titles / Standings"
+					onclick="unavailable('Review Standings')"><span
 					class="glyphicon glyphicon-certificate"></span> Our Titles</a></li>
 
-			<li><a href="#" title="Export Trial Spreadsheet"><span
+			<li><a href="#" title="Export Trial Spreadsheet"
+					onclick="unavailable('Export Sheet')"><span
 					class="glyphicon glyphicon-export"></span> Export</a></li>
 			
-			<li><a href="#" title="Import Trial Spreadsheet"><span
+			<li><a href="#" title="Import Trial Spreadsheet"
+					onclick="unavailable('Import Sheet')"><span
 					class="glyphicon glyphicon-import"></span> Import</a></li>
 			
-			<li><a href="#" title="Queries / Reports"><span
+			<li><a href="#" title="Queries / Reports"
+					onclick="unavailable('Reports')"><span
 					class="glyphicon glyphicon-duplicate"></span> Reports</a></li>
 			
-			<li><a href="#" title="Maintain Our News"><span
+			<li><a href="#" title="Maintain Our News"
+					onclick="unavailable('Manage News')"><span
 					class="glyphicon glyphicon-film"></span> News</a></li>
 			
 		</ul>

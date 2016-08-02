@@ -23,10 +23,12 @@ while ($validSubmission) {
 		$loginMessage = "** No Such Member on file !!";
 		break;
 		}
+/** skip active test for now ...
 	if ($member->status != 'Active') {
 		$loginMessage = "** This Member is NOT Active !!";
 		break;
 		}
+*/
 	$validMember = true;
 	if (! $member->verifyPassword($password)) {
 		$loginMessage = "** Invalid Member Password !!";
