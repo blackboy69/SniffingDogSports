@@ -92,14 +92,16 @@ include_once("classes/SDS.php");
 <nav class="navbar navbar-default plaqueBG">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+			<button type="button"
+				class="navbar-toggle collapsed" data-toggle="collapse"
 				data-target="#memberNavbar">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?=$member->fullname()." [".$member->status."]"?></a>
+			<a class="navbar-brand"
+			   href="#"><?=$member->fullname()." [".$member->status."]"?></a>
 		</div>
     <div class="collapse navbar-collapse" id="memberNavbar">
 		<ul class="nav navbar-nav">
@@ -112,6 +114,10 @@ include_once("classes/SDS.php");
 			<li><a href="#" title="View / Change your Member Profile"
 				    onclick="dispatcher('contentSection','memberEdit')"><span
 					class="glyphicon glyphicon-user"></span> Your Profile</a></li>
+
+			<li><a href="#" title="Make payments to SDS"
+				    onclick="dispatcher('contentSection','memberPayment')"><span
+					class="glyphicon glyphicon-usd"></span> Payments</a></li>
 
 			<li><a href="#" title="Manage your Dogs"
 				   onclick="unavailable('Manage your Dogs')"><span
@@ -151,7 +157,8 @@ include_once("classes/SDS.php");
 <nav class="navbar navbar-default plaqueBG">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+			<button type="button"
+				class="navbar-toggle collapsed" data-toggle="collapse"
 				data-target="#adminNavbar">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span>

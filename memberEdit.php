@@ -12,13 +12,12 @@ $formSubmitted = false;
 
 if ($_REQUEST['email']) {
 	if ($_SESSION['mode']=='p' && ($_REQUEST['captcha'] != $_SESSION['captcha'])) {
-		echo "<h1>** Improper Code Entered !!</h1>\n";
+		echo "<h1>** Incorrect Code Entered !!</h1>\n";
 		exit;
 		}
 	$formSubmitted = true;
 	$member = new Members($_REQUEST['member']);
 	$member->merge($_REQUEST);
-	$member->referenced = null;
 	$member->store();
 	$_SESSION['member'] = $member->member;
  	}
@@ -43,7 +42,7 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 	<div class="content">
 		<h3 class='hiliteFG'>Member profile has been updated.</h3>
 		<center>
-		<table style="color:maroon;width:90%;font-size:12pt;">
+		<table style="color:maroon;width:90%;font-size:18pt;">
 			<caption><u>Information Submitted</u></caption>
 			<tbody>
 				<tr><td>Member ID:</td><td><?=$member->member?></td></tr>
@@ -51,7 +50,9 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 				<tr><td>Member Status:</td><td><?=$member->status?></td></tr>
 			</tbody>
 		</table><br>
+
 	<? if ($_SESSION['mode']=='p' and $member->status=='Pending') { ?>
+
 		<h3 class='hiliteFG'>Click below to proceed with payment</h3>
 		<button id="payment_id" name="payment"
 			onclick="alert('Coming soon ...')"
@@ -61,7 +62,9 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			onclick="returnHome()"
 			class="btn btn-default">Skip for now</button>
 			<br><br>
+
 	<? } ?>
+
 		</center>
 	</div>
 </div>
@@ -81,13 +84,15 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			<span class='required'> [= required]</span>
 		</h3>
 		<p>&nbsp;</p>
-		<form class="form-horizontal" onsubmit="memberFormSubmission(this);return false;">
+		<form class="form-horizontal"
+			  onsubmit="memberFormSubmission(this);return false;">
 		<fieldset>
 
 <? if ($_SESSION['mode']=='a') { ?>
 
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="member_id"></label>
+			<label class="col-md-4 control-label"
+				   for="member_id"></label>
 			<div class="col-md-4">
 				<div class="input-group">
 					<span class="input-group-addon">Membership #</span>
@@ -97,7 +102,8 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="referenced_id"></label>  
+			<label class="col-md-4 control-label"
+				   for="referenced_id"></label>  
 			<div class="col-md-4">
 				<div class="input-group">
 					<span class="input-group-addon">Updated at</span>
@@ -107,7 +113,8 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="type_id">Type</label>
+			<label class="col-md-4 control-label"
+				   for="type_id">Type</label>
 			<div class="col-md-4">
 				<?=Html::select(
 					"type",
@@ -119,7 +126,8 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="status_id">Status</label>
+			<label class="col-md-4 control-label"
+				   for="status_id">Status</label>
 			<div class="col-md-4">
 				<?=Html::select(
 					"status",
@@ -133,15 +141,16 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 
 <? } else { ?>
 
-		<input type="hidden" id="member_id" name="member">
-		<input type="hidden" id="referenced_id" name="referenced">
-		<input type="hidden" id="type_id" name="type" value="Member">
-		<input type="hidden" id="status_id" name="status" value="Pending">
+	<input type="hidden" id="member_id" name="member" value="<?=$member->member?>">
+	<input type="hidden" id="referenced_id" name="referenced">
+	<input type="hidden" id="type_id" name="type" value="Member">
+	<input type="hidden" id="status_id" name="status" value="Pending">
 
 <? } ?>
 
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="salutation_id">Salutation</label>
+			<label class="col-md-4 control-label"
+				   for="salutation_id">Salutation</label>
 			<div class="col-md-4">
 				<?=Html::select(
 					"salutation",
@@ -153,35 +162,40 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="firstname_id">First name</label>  
+			<label class="col-md-4 control-label required"
+				   for="firstname_id">First name</label>  
 			<div class="col-md-5">
 				<input id="firstname_id" name="firstname" type="text"
 					class="form-control input-lg" value="<?=$member->firstname?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="lastname_id">Last name</label>  
+			<label class="col-md-4 control-label required"
+				   for="lastname_id">Last name</label>  
 			<div class="col-md-5">
 				<input id="lastname_id" name="lastname" type="text"
 					class="form-control input-lg" value="<?=$member->lastname?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="address_id">Address</label>  
+			<label class="col-md-4 control-label required"
+				   for="address_id">Address</label>  
 			<div class="col-md-5">
 				<input id="address_id" name="address" type="text"
 					class="form-control input-lg" value="<?=$member->address?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="city_id">City</label>  
+			<label class="col-md-4 control-label required"
+				   for="city_id">City</label>  
 			<div class="col-md-5">
 				<input id="city_id" name="city" type="text"
 					class="form-control input-lg" value="<?=$member->city?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="state_id">State</label>
+			<label class="col-md-4 control-label required"
+				   for="state_id">State</label>
 			<div class="col-md-4">
 				<?=Html::selectState(
 					"state",
@@ -191,35 +205,40 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="zip_id">Zip/Post code</label>  
+			<label class="col-md-4 control-label required"
+				   for="zip_id">Zip/Post code</label>  
 			<div class="col-md-5">
 				<input id="zip_id" name="zip" type="text"
 					class="form-control input-lg" value="<?=$member->zip?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="homephone_id">Home phone</label>  
+			<label class="col-md-4 control-label required"
+				   for="homephone_id">Home phone</label>  
 			<div class="col-md-5">
 				<input id="homephone_id" name="homephone" type="text"
 					class="form-control input-lg" value="<?=$member->homephone?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="mobilephone_id">Mobile phone</label>  
+			<label class="col-md-4 control-label required"
+				   for="mobilephone_id">Mobile phone</label>  
 			<div class="col-md-5">
 				<input id="mobilephone_id" name="mobilephone" type="text"
 					class="form-control input-lg" value="<?=$member->mobilephone?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="email_id">E-mail</label>  
+			<label class="col-md-4 control-label required"
+				   for="email_id">E-mail</label>  
 			<div class="col-md-5">
 				<input id="email_id" name="email" type="text"
 					class="form-control input-lg" value="<?=$member->email?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="password_id">Password</label>  
+			<label class="col-md-4 control-label required"
+				   for="password_id">Password</label>  
 			<div class="col-md-5">
 				<input id="password_id" name="password" type="password"
 					class="form-control input-lg" value="<?=$member->password?>">
@@ -229,7 +248,8 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 <? if ($_SESSION['mode']!='a') { ?>
 
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="apassword_id">Password (again)</label>  
+			<label class="col-md-4 control-label required"
+				   for="apassword_id">Password (again)</label>  
 			<div class="col-md-5">
 				<input id="apassword_id" name="apassword" type="password"
 					class="form-control input-lg" value="<?=$member->password?>">
@@ -238,7 +258,8 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 
  <? if ($_SESSION['mode']=='p') { ?>
 		<div class="form-group">
-			<label class="col-md-4 control-label required" for="captcha_id">Enter the code</label>  
+			<label class="col-md-4 control-label required"
+				   for="captcha_id">Enter the code</label>  
 			<div class="col-md-5">
 				<img src="/yourshowcase/media/captcha" style="vertical-align:middle">
 				Please enter this number below
@@ -252,28 +273,32 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 
 		<input type='hidden' id='apassword_id' name='apassword' value='<?=$member->password?>'>
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="joined_id">Joined</label>  
+			<label class="col-md-4 control-label"
+				   for="joined_id">Joined</label>  
 			<div class="col-md-5">
 				<input id="joined_id" name="joined" type="text"
 					class="form-control input-lg" value="<?=$member->joined?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="renewed_id">Renewed</label>  
+			<label class="col-md-4 control-label"
+				   for="renewed_id">Renewed</label>  
 			<div class="col-md-5">
 				<input id="renewed_id" name="renewed" type="text"
 					class="form-control input-lg" value="<?=$member->renewed?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="charge_id">Charge</label>  
+			<label class="col-md-4 control-label"
+				   for="charge_id">Charge</label>  
 			<div class="col-md-5">
 				<input id="charge_id" name="charge" type="text"
 					class="form-control input-lg" value="<?=$member->charge?>">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="col-md-4 control-label" for="notes_id">Notes</label>
+			<label class="col-md-4 control-label"
+				   for="notes_id">Notes</label>
 			<div class="col-md-4">                     
 				<textarea class="form-control input-lg" id="notes_id"
 					name="notes"><?=$member->notes?></textarea>

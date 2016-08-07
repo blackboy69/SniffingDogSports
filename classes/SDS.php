@@ -29,6 +29,7 @@ $SDS = new Object;
 	"1250 Sebastopol Rd",
 	"Santa Rosa, CA 95407"
 	);
+ $SDS->membership	= 24.00;	// annual fee
  
 // application control:
 

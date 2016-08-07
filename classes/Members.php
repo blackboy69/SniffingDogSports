@@ -53,6 +53,16 @@ public static function fetchByEmail($email=null) {
 	}
 
 /**
+ * override Container store method to handle timestamp
+ * 
+ * @return mixed				: key of record or false
+ */
+public function store() {
+	$this->referenced = null;	// force new timestamp
+	return parent::store();
+	}
+
+/**
  * return the full name as: [Mr/Ms] First Last
  * 
  * @return string				: the member full name
