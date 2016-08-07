@@ -98,14 +98,35 @@ if ($_REQUEST['something']) {
 
 		<div class="form-group" style="text-align:center;">
 				<button id="payonline_id" name="payonline"
+					onclick="return false"
 					class="btn btn-lg btn-primary">Pay with Debit/Credit Card</button>
 				&nbsp;&nbsp;
 			    <button id="paybycheck_id" name="paybycheck"
+					onclick="$('#paybycheckinfo_id').toggle();return false;"
 					class="btn btn-lg btn-primary">Pay with a Paper Check</button>
 		</div>
 
 		</fieldset>
 		</form>
+
+		<!--payment by paper check-->
+		<div id="paybycheckinfo_id" class="panel panel-info" style="display:none;">
+			<div class="panel-heading">
+				<h3 class="panel-title">Payment by Paper Check</h3>
+			</div>
+			<div class="panel-body">
+				<h3>Please remit your payment to: <b><?=$SDS->brand?></b>
+					by mailing a check to the following address:</h3>
+				<h3><b>
+					<? foreach ($SDS->address as $line) {
+						echo $line,"<br>\n";
+						}
+					?>
+					</b></h3>
+			</div>
+		</div>
+
+		<p>&nbsp;</p>
 	</div>
 </div>
 

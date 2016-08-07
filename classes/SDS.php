@@ -14,7 +14,7 @@ $db = new Databoss("localhost","sds");
 // Nomenclature:
 
 $SDS = new Object;
- $SDS->brand		= "Sniffing Dog Sports";
+ $SDS->brand		= "Sniffing Dog Sports, LLC";
  $SDS->description	= "Members Site";
  $SDS->version		= "v1.2, August 2016";
  $SDS->copyright	= "Copyright 2016, Sniffing Dog Sports, LLC";
@@ -24,7 +24,7 @@ $SDS = new Object;
 	"Donna Goleman"		=> "donnagk9@gmail.com"
 	 );
  $SDS->address		= array(
-	"LeBallister’s Seed and Fertilizer",
+	"LeBallister's Seed and Fertilizer",
 	"Attention:  Kelly Boyer",
 	"1250 Sebastopol Rd",
 	"Santa Rosa, CA 95407"
