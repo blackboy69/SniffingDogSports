@@ -22,6 +22,8 @@ include_once("classes/SDS.php");
 		  rel="stylesheet" />
 	<link href="/yourshowcase/ClassLibrary/bootstrap/NewsScroller/css/site.css"
 		  rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css"
+		  href="/ClassLibrary/datatables/datatables.min.css"/>
     <link href="/sds.members.css" rel="stylesheet" />
 </head>
 <body class="pageBG">
@@ -88,7 +90,8 @@ and hide with:
 <script type="text/javascript"
 	src="/yourshowcase/ClassLibrary/bootstrap/NewsScroller/scripts/jquery.bootstrap.newsbox.min.js"
 	type="text/javascript"></script>
-
+<script type="text/javascript"
+	src="/yourshowcase/ClassLibrary/datatables/datatables.min.js"></script>
 <script type="text/javascript">
 
 // application-wide variables:

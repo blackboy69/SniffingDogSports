@@ -1,0 +1,71 @@
+<?php
+/**
+ * Sniffing Dog Sports - Member Listing page
+ * August 2016 by Harley H. Puthuff
+ * Copyright 2016, Sniffing Dog Sports, Ltd.
+ */
+include_once("classes/SDS.php");
+
+if ($_REQUEST['something']) {
+	}
+
+?>
+
+<div class="plaque">
+	<div class="headline">
+		Member Listing
+	</div>
+
+	<div class="content">
+
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">Sniffing Dog Sports members on File:</h3>
+		</div>
+		<div id="listingContent_id" class="panel-body">
+			<table id="members_id" class="table table-striped table-bordered"
+				cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th>Edit</th>
+						<th>Type</th>
+						<th>Last Name</th>
+						<th>First Name</th>
+						<th>City</th>
+						<th>State</th>
+						<th>Phone</th>
+						<th>Joined</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+				<?php
+					$memberList = Members::summaryList();
+					foreach ($memberList as $member) {
+						$phone = $member[7] ? $member[7] : $member[6];
+						echo	"<tr id='member_{$member[0]}'>",
+								"<td align='center'>*</td>",
+								"<td>{$member[1]}</td>",
+								"<td>{$member[2]}</td>",
+								"<td>{$member[3]}</td>",
+								"<td>{$member[4]}</td>",
+								"<td>{$member[5]}</td>",
+								"<td>{$phone}</td>",
+								"<td>{$member[8]}</td>",
+								"<td align='center'>*</td>",
+								"</tr>\n";
+						}
+				?>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	</div>
+</div>
+
+<script type='text/javascript'>
+
+$('#members_id').DataTable();
+
+</script>

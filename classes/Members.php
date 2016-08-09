@@ -53,6 +53,33 @@ public static function fetchByEmail($email=null) {
 	}
 
 /**
+ * return a summary list of members
+ * note: each row contains these columns
+ *	member			: member ID
+ *	type			: member type (Member,Administrator,Developer,etc.)
+ *	lastname		: member last name
+ *	firstname		: member first name
+ *	city			: member city
+ *	state			: member state
+ *	phone			: member home or mobile phone
+ *	joined			: member join date
+ *	
+ * @return type
+ */
+public static function summaryList() {
+	global $db;
+	$list = array();
+	$rows = $db->fetchArrays("
+		SELECT `member`,`type`,`lastname`,`firstname`,`city`,`state`,
+			   `homephone`,`mobilephone`,`joined`
+		FROM sds.members
+		ORDER BY `member` ASC
+		");
+	return $rows;
+//	return $list;
+	}
+
+/**
  * override Container store method to handle timestamp
  * 
  * @return mixed				: key of record or false

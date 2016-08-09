@@ -176,7 +176,7 @@ include_once("classes/SDS.php");
 				   class="sr-only">(current)</span></a></li>
 			
 			<li><a href="#" title="Manage Members"
-				   onclick="unavailable('Manage Members')"><span
+				   onclick="dispatcher('contentSection','memberList')"><span
 					class="glyphicon glyphicon-user"></span> Our Members</a></li>
 			
 			<li><a href="#" title="Manage Trials"
