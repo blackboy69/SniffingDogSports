@@ -6,7 +6,6 @@
  */
 include_once("classes/SDS.php");
 
-$member = new Members(3);
-$member->getDogs();
+$member = new Members;
 echo Data::breakout($member);
 ?>

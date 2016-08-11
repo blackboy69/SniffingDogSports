@@ -5,7 +5,7 @@
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 include_once("/yourshowcase/ClassLibrary/Medusa.php");
-include_once("passwordLib.php");
+// *probably not needed* include_once("passwordLib.php");
 
 // our database connector:
 
@@ -38,6 +38,7 @@ session_start();
 // set up public mode if none present:
 if (!isset($_SESSION['mode'])) {
 	$_SESSION['mode']		= 'p';
+	$_SESSION['boss']		= null;
 	$_SESSION['member']		= null;
 	$_SESSION['dog']		= null;
 	$_SESSION['trial']		= null;

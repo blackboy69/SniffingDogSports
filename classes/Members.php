@@ -7,8 +7,12 @@
 
 class Members extends Container {
 
-	public $database	= "sds";
-	public $table		= "members";
+	const	RenewalNoticeSent		= 0x0001;
+	const	AccountInfoSent			= 0x0002;
+	const	Dues_2016_2017			= 0x0004;
+	
+	public	$database	= "sds";
+	public	$table		= "members";
 
 // member types:
 	public static $types = array(

@@ -36,8 +36,14 @@ while ($validSubmission) {
 		}
 	$validLogin = true;
 	$loginMessage = "Welcome ! ".$member->fullname();
-	$_SESSION['mode'] =
-		($member->type=='Administrator' || $member->type=='Developer') ? 'a' : 'm';
+	if ($member->type=='Administrator' || $member->type=='Developer') {
+		$_SESSION['mode'] = 'a';
+		$_SESSION['boss'] = $member->member;
+		}
+	else {
+		$_SESSION['mode'] = 'm';
+		$_SESSION['boss'] = null;
+		}
 	$_SESSION['member'] = $member->member;
 	$_SESSION['dog'] = null;
 	$_SESSION['trial'] = null;

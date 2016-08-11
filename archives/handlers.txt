@@ -16,8 +16,7 @@
 15,"Cynthia","Dugan","55 Camino del Diablo","Orinda","CA","94563",,"(925)254-4092","csdugan@comcast.net",1,,1,1
 16,"Suzanne","Edholm","9921 Longview Ln","Pleasanton","CA","94588","9259630785","9259630785","suzanneedholm@comcast.net",0,7/1/2016 0:00:00,1,0
 17,"Gretchen","Farrell","11920 Hartsook Street","Valley Village","CA","91607","818-985-7170","818-298-5564","gfarrell@earthlink.net",0,7/1/2016 0:00:00,1,0
-18,"Nancy","Frensley","419 Montalvin Dr 
-","San Pablo","CA","94806","510-837-7682",,"nancy@finessedogtraining.net",0,7/1/2016 0:00:00,1,0
+18,"Nancy","Frensley","419 Montalvin Dr","San Pablo","CA","94806","510-837-7682",,"nancy@finessedogtraining.net",0,7/1/2016 0:00:00,1,0
 19,"Dianne","Garcia","5787 Levie Lane","Sebastopol","CA","95472","707/827-3331","831/521-0972","djgar@comcast.net",0,7/1/2016 0:00:00,1,0
 20,"Tanya","Grave",,,,,,,"furdog@gmail.com",0,,1,0
 21,"Nicole","Hardy","5501 Thomas Ave.","Oakland","CA","94618","925-708-0478","925-708-0478","n.alexhardy@gmail.com",0,7/1/2016 0:00:00,1,0
@@ -33,35 +32,28 @@
 32,"Mary","Love","70 Manzanita Ave.","San Rafael","CA","94901","415-721-7944","510-334-6559","hoedog2@comcast.net",1,7/1/2016 0:00:00,1,1
 33,"Elizabeth","Manning","7531 Desmond Ct,","Salinas","CA","93907","831 663 2908","831 206 2722","lzmnnng@gmail.com",0,7/1/2016 0:00:00,1,0
 34,"Roxane","McKenna","5420 Chauplin Ave.","Atascadero","CA","93422","18057090435","18057090435","kennakats@gmail.com",1,7/1/2016 0:00:00,1,1
-35,"Sandra Sue","Mocco","1729 Gumwood Drive
-","Concord","CA","94519","925-687-9087","925-285-1713","sandrasue13@me.com",0,7/1/2016 0:00:00,1,0
+35,"Sandra Sue","Mocco","1729 Gumwood Drive","Concord","CA","94519","925-687-9087","925-285-1713","sandrasue13@me.com",0,7/1/2016 0:00:00,1,0
 36,"Sue","Nelson","314 Tunnel Ave","Richmond","CA","94801","510.235-1376","510.406-6941","PtRichSue@att.net",1,7/1/2016 0:00:00,1,1
-37,"Leah","Olson","1327 Parker St Apt A
-","Berkeley","CA","94702",,"510-926-7832","littledocolson@gmail.com",0,,1,0
+37,"Leah","Olson","1327 Parker St Apt A","Berkeley","CA","94702",,"510-926-7832","littledocolson@gmail.com",0,,1,0
 38,"Kristine","Olson","702 Mistral Court","Danville","CA","94506",,"(925) 323-5650","cokomo@comcast.net",1,7/1/2016 0:00:00,1,1
 39,"Karin","Parker","3186 Contra Loma Blvd. Box 128","Antioch","CA","94509","9257787113","9257590838","1riverun@sbcglobal.net",0,7/1/2016 0:00:00,1,0
 40,"Bev","Peabody","9460 Vallejo Dr.","Orangevale","CA","95662",,"9164257125","workink9@comcast.net",0,7/1/2016 0:00:00,1,0
-42,"Joanne","Prada","111 Riesling Ct.
-","Cameron Park","CA","95682","530-676-7433","925-890-0991","jtprada@comcast.net",0,7/1/2016 0:00:00,1,0
+42,"Joanne","Prada","111 Riesling Ct.","Cameron Park","CA","95682","530-676-7433","925-890-0991","jtprada@comcast.net",0,7/1/2016 0:00:00,1,0
 43,"Kathy","Prevost","1080 Jasmine Circle","El Dorado Hills","CA","95762","5306726836","9167179181","hpkp@aol.com",1,7/1/2017 0:00:00,1,1
 44,"Creta","Pullen","Star Route #3 ","Bolinas","CA","94924","415-868-2064","415-309-1542","k-9@oceansongretreat.com",1,7/1/2016 0:00:00,1,1
 45,"Elizabeth","Ramsey","1626 Colusa Avenue","Davis","CA","95616","530-756-4948",,"katyblue@cal.net",1,7/1/2016 0:00:00,1,1
 46,"Deirdre","Rand","302 Vista de Valle","Mill Valley","CA","94941","4153833281","4152651374","dcr@docrand.com",1,7/1/2016 0:00:00,1,1
 47,"Laurie","Raz-Astrakhan","959 Tulare Ave","Berkeley","CA","94707","510-526-7757","510-206-7413","laurie-jerry@sbcglobal.net",1,7/1/2016 0:00:00,1,1
 48,"Jan","Schlobohm","5046 East Grant Avenue","Fresno","CA","93727","559-255-2332","559-779-2235","whwolf@jps.net",1,7/1/2016 0:00:00,1,1
-49,"Kymberly","Speer","994 Carol Lane
-Lafayette, CA 94549","Lafayette","CA","94549","(925) 283-9715","(925) 283-9715","kspeer1960@gmail.com",0,,1,0
+49,"Kymberly","Speer","994 Carol Lane","Lafayette","CA","94549","(925) 283-9715","(925) 283-9715","kspeer1960@gmail.com",0,,1,0
 50,"Shiffra","Steele","PO Box 1125","Middleton","CA","94561",,,"steeledog@gmail.com",0,7/1/2016 0:00:00,1,0
-51,"Maryanne","Steurer","PO Box 2858
-95741
-USA","Rancho Cordova","CA","95741",,"(916) 529-1874","Msteurer40@aol.com",0,7/1/2016 0:00:00,1,0
+51,"Maryanne","Steurer","PO Box 2858","Rancho Cordova","CA","95741",,"(916) 529-1874","Msteurer40@aol.com",0,7/1/2016 0:00:00,1,0
 53,"Kathy","Taylor","297  Kathleen","Pleasant Hill","CA","94523","925-687-4920","1-925-212-0790","Ktaylor13@comcast.net",1,7/1/2016 0:00:00,1,1
 54,"Cathy","Thomas","PO Box 1955","Loomis","CA","95650","916-812-2380","916-812-2380","presas4me@sbcglobal.net",0,7/1/2016 0:00:00,1,0
 55,"Sean","Turner","3149 Sheffield Place","Concord","CA","94518","9256862042","4153057259","birdiephd@netzero.com",1,7/1/2016 0:00:00,1,1
 56,"Karen","Vinciguerra","5softcom.net19 42nd St","Sacramento","CA","95819","916-454-1248","916-203-0725","ampedpups@yahoo.com",1,7/1/2016 0:00:00,1,1
 57,"Maura","Warnecke","4524 Melody Drive Apt A","Concord","CA","94521","9257853455","9257853455","maurawarnecke@gmail.com",0,7/1/2016 0:00:00,1,0
-58,"Janet","Waters","PO Box 591
-USA","Alta","CA","95701","530-389-9033","530-263-2585","waterstervs@gmail.com",0,7/1/2016 0:00:00,1,0
+58,"Janet","Waters","PO Box 591","Alta","CA","95701","530-389-9033","530-263-2585","waterstervs@gmail.com",0,7/1/2016 0:00:00,1,0
 59,"Christine","Wedel","1854 Judson Lane","Santa Rosa","CA","95401","7075781612","7075295779","pwedel66@sbcglobal.net",0,7/1/2016 0:00:00,1,0
 60,"Christa","Wendlandt","1011 ATHERTON ST,","Vallejo","CA","94590","7073739163","7073739163","hovistore@aol.com",0,7/1/2016 0:00:00,1,0
 61,"Ginny","Pavlakovich","1155 Clubhouse Drive","Santa Maria","CA","93455","8059355512","8057200977","pavfam2x2@comcast.net",1,7/1/2016 0:00:00,1,1
