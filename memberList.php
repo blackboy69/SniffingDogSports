@@ -5,9 +5,7 @@
  * Copyright 2016, Sniffing Dog Sports, Ltd.
  */
 include_once("classes/SDS.php");
-
-if ($_REQUEST['something']) {
-	}
+$_SESSION['prior'] = "memberList";
 
 ?>
 
@@ -20,7 +18,12 @@ if ($_REQUEST['something']) {
 
 	<div class="panel panel-info">
 		<div class="panel-heading">
-			<h3 class="panel-title">Sniffing Dog Sports members on File:</h3>
+			<h3 class="panel-title">Sniffing Dog Sports members on File:
+				<button type="submit" id="add_id" name="add"
+					style="float:right;"
+					onclick="return editMember()"
+					class="btn btn-primary btn-xs">Add Member</button>
+			</h3>
 		</div>
 		<div id="listingContent_id" class="panel-body">
 			<table id="members_id" class="table table-striped table-bordered"
@@ -28,6 +31,7 @@ if ($_REQUEST['something']) {
 				<thead>
 					<tr>
 						<th>Edit</th>
+						<th>#</th>
 						<th>Type</th>
 						<th>Last Name</th>
 						<th>First Name</th>
@@ -35,7 +39,6 @@ if ($_REQUEST['something']) {
 						<th>State</th>
 						<th>Phone</th>
 						<th>Joined</th>
-						<th>Delete</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -43,8 +46,14 @@ if ($_REQUEST['something']) {
 					$memberList = Members::summaryList();
 					foreach ($memberList as $member) {
 						$phone = $member[7] ? $member[7] : $member[6];
-						echo	"<tr id='member_{$member[0]}'>",
-								"<td align='center'>*</td>",
+						echo	"<tr id='m_{$member[0]}'>",
+								"<td align='center'>",
+									"<a href='#' title='Change'",
+									" onclick='return editMember(this)'>",
+									"<span class=\"glyphicon glyphicon-edit\">",
+									"</span>",
+									"</a></td>",
+								"<td>{$member[0]}</td>",
 								"<td>{$member[1]}</td>",
 								"<td>{$member[2]}</td>",
 								"<td>{$member[3]}</td>",
@@ -52,7 +61,6 @@ if ($_REQUEST['something']) {
 								"<td>{$member[5]}</td>",
 								"<td>{$phone}</td>",
 								"<td>{$member[8]}</td>",
-								"<td align='center'>*</td>",
 								"</tr>\n";
 						}
 				?>
@@ -65,6 +73,16 @@ if ($_REQUEST['something']) {
 </div>
 
 <script type='text/javascript'>
+
+// add/edit the selected member:
+
+function editMember(obj) {
+	var id = obj ? $(obj).closest('tr').attr('id').substring(2) : null;
+	dispatcher('contentSection','memberEdit',{member:id});
+	return false;
+	}
+
+// initialize the member table display:
 
 $('#members_id').DataTable();
 

@@ -55,7 +55,7 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 
 		<h3 class='hiliteFG'>Click below to proceed with payment</h3>
 		<button id="payment_id" name="payment"
-			onclick="alert('Coming soon ...')"
+			onclick="return dispatcher('contentSection','memberPayment')"
 			class="btn btn-primary">Pay Membership Fees</button>
 		&nbsp;&nbsp;
 		<button id="notnow_id" name="notnow"

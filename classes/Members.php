@@ -68,15 +68,12 @@ public static function fetchByEmail($email=null) {
  */
 public static function summaryList() {
 	global $db;
-	$list = array();
-	$rows = $db->fetchArrays("
+	return $db->fetchArrays("
 		SELECT `member`,`type`,`lastname`,`firstname`,`city`,`state`,
 			   `homephone`,`mobilephone`,`joined`
 		FROM sds.members
 		ORDER BY `member` ASC
 		");
-	return $rows;
-//	return $list;
 	}
 
 /**

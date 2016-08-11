@@ -41,7 +41,16 @@ if (!isset($_SESSION['mode'])) {
 	$_SESSION['member']		= null;
 	$_SESSION['dog']		= null;
 	$_SESSION['trial']		= null;
+	$_SESSION['prior']		= null;
 	}
+
+// check for changes to these saved values:
+if (isset($_REQUEST['member']))
+	$_SESSION['member'] = $_REQUEST['member'];
+if (isset($_REQUEST['dog']))
+	$_SESSION['dog'] = $_REQUEST['dog'];
+if (isset($_REQUEST['trial']))
+	$_SESSION['trial'] = $_REQUEST['trial'];
 
 // if we have a logged-in member, load their profile
 if ($_SESSION['member']) {
