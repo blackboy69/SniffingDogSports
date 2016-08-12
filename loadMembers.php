@@ -76,10 +76,12 @@ function processInputLine($buffer) {
 	$member->mobilephone = preparePhone($fields[8]);
 	$member->email = prepareString($fields[9]);
 	$member->password = "nosework";
-	$member->anniversary = $member->renewed = prepareDate($fields[11]);
-	if ($fields[10]) $member->flags += Members::RenewalNoticeSent;
-	if ($fields[12]) $member->flags += Members::AccountInfoSent;
-	if ($fields[13]) $member->flags += Members::Dues_2016_2017;
+	$member->anniversary = prepareDate($fields[11]);
+	if ($fields[10]) $member->setRenewalNoticeSent();
+	if ($fields[12]) $member->setAccountInfoSent();
+	if ($fields[13]) $member->setDues_2016_2017();
+	if ($member->isDues_2016_2017())
+		$member->renewed = $member->anniversary;
 	$member->write();
 	return 1;
 	}

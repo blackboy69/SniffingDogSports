@@ -38,7 +38,7 @@ $_SESSION['prior'] = "memberList";
 						<th>City</th>
 						<th>State</th>
 						<th>Phone</th>
-						<th>Joined</th>
+						<th>Anniversary</th>
 					</tr>
 				</thead>
 				<tbody>

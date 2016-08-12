@@ -7,9 +7,9 @@
 
 class Members extends Container {
 
-	const	RenewalNoticeSent		= 0x0001;
-	const	AccountInfoSent			= 0x0002;
-	const	Dues_2016_2017			= 0x0004;
+	const	RenewalNoticeSent		= 0b0000000000000001;
+	const	AccountInfoSent			= 0b0000000000000010;
+	const	Dues_2016_2017			= 0b0000000000000100;
 	
 	public	$database	= "sds";
 	public	$table		= "members";
@@ -66,7 +66,7 @@ public static function fetchByEmail($email=null) {
  *	city			: member city
  *	state			: member state
  *	phone			: member home or mobile phone
- *	joined			: member join date
+ *	anniversary		: member join date
  *	
  * @return type
  */
@@ -74,7 +74,7 @@ public static function summaryList() {
 	global $db;
 	return $db->fetchArrays("
 		SELECT `member`,`type`,`lastname`,`firstname`,`city`,`state`,
-			   `homephone`,`mobilephone`,`joined`
+			   `homephone`,`mobilephone`,`anniversary`
 		FROM sds.members
 		ORDER BY `member` ASC
 		");
@@ -87,6 +87,10 @@ public static function summaryList() {
  */
 public function store() {
 	$this->referenced = null;	// force new timestamp
+	if (! $this->anniversary) {
+		$this->anniversary = Date::today(SHORTDATE);
+		$this->renewed = null;
+		}
 	return parent::store();
 	}
 
@@ -111,55 +115,55 @@ public function fullname() {
  * @return boolean				: true or false
  */
 public function verifyPassword($password) {
-	if (substr($this->password,0,2) == '$2')	// encrypted
-		return password_verify($password,$this->password);
-	else										// plain
-		return ($this->password == $password) ? true : false;
+	return ($this->password == $password) ? true : false;
 	}
 
 /**
- * load array of dogs for this member & return ref.
+ * check is Dues paid for 2016-2017
  * 
- * @global resource $db			: global Databoss handle
- * @global object $SDS			: global application specs
- * @return ref					: ref. to the array of dogs or null
+ * @return boolean				: true or false
  */
-public function &getDogs() {
-	global $db,$SDS;
-	$this->dogs = $db->fetchObjects("
-		SELECT * FROM sds.dogs
-		WHERE member = $this->member
-		ORDER BY callname ASC
-		","Dogs");
-	return $this->dogs;
+public function isDues_2016_2017() {
+	return ($this->flags & self::Dues_2016_2017) ? true : false;
 	}
 
 /**
- * return a string with html for table of member dogs
- * 
- * @global resource $db			: global Databoss handle
- * @global object $SDS			: global application specs
- * @return string				: table of dogs
+ * set the flag for Dues paid for 2016-2017
  */
-public function listDogs() {
-	global $db,$SDS;
-	$result = "<table id='memberDogs' width='100%'>" .
-			  "<tr>" .
-			  "<th>Status</th><th>Name</th><th>Full name</th><th>Breed</th>" .
-			  "</tr>\n";
-	foreach ($this->dogs as $dog) {
-		$result .= "<tr>" .
-				   "<td>{$dog->status}</td>" .
-				   "<td>{$dog->callname}</td>" .
-				   "<td>{$dog->regname}</td>" .
-				   "<td>{$dog->breed}</td>" .
-				   "</tr>\n";
-		}
-	$result .= "<tr>" .
-			   "<td></td><td></td><td></td><td></td>" .
-			   "</tr>\n";
-	$result .= "</table>\n";
-	return $result;
+public function setDues_2016_2017() {
+	$this->flags |= self::Dues_2016_2017;
+	}
+
+/**
+ * check if a Renewal Notice was sent
+ * 
+ * @return boolean				: true or false
+ */
+public function isRenewalNoticeSent() {
+	return ($this->flags & self::RenewalNoticeSent) ? true : false;
+	}
+
+/**
+ * set the flag for Renewal Notice Sent
+ */
+public function setRenewalNoticeSent() {
+	$this->flags |= self::RenewalNoticeSent;
+	}
+
+/**
+ * check if Account Info was Sent
+ * 
+ * @return boolean				: true or false
+ */
+public function isAccountInfoSent() {
+	return ($this->flags & self::AccountInfoSent) ? true : false;
+	}
+
+/**
+ * set the flag for Account Info Sent
+ */
+public function setAccountInfoSent() {
+	$this->flags |= self::AccountInfoSent;
 	}
 
 }

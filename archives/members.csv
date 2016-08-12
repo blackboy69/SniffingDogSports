@@ -1,6 +1,6 @@
 "SDS Handler .","Handler First Name","Handler Last Name","Address","City","State","Zip Code","Home Phone .","Cell Phone .","Email Address","R Notice Sent","Anniversary Date","Acct Info Sent","2016/17 Dues"
 1,"Donna","Golemon","1540 Polk Street","Napa","CA","94559","7072553919","7077386163","donnagk9@gmail.com",1,"7/1/2016 0:00:00",1,1
-2,"Laurie","Leach","219 Deanna Place,","Windsor","CA",,,,"laurieleach@comcast.net",1,"7/1/2016 0:00:00",1,1
+2,"Laurie","Leach","219 Deanna Place","Windsor","CA",,,,"laurieleach@comcast.net",1,"7/1/2016 0:00:00",1,1
 3,"Jennifer","Burns",,"Napa","Ca","94558","7072265070","7072057178","jenniferlburns23@comcast.net",0,"7/1/2016 0:00:00",1,0
 4,"Liz","Callahan","802 Anastasia Drive","Lakeport","CA","95453","7072635029","7073494318","lizardcallahan@gmail.com",0,"7/1/2016 0:00:00",1,0
 5,"Lynne","Armstrong","1834 Las Ramblas Drive","Concord","CA","94521","925-524-2070","925-787-9013","lynne@cashcreekwhippets.com",1,"7/1/2016 0:00:00",1,1
@@ -21,7 +21,7 @@
 20,"Tanya","Grave",,,,,,,"furdog@gmail.com",0,,1,0
 21,"Nicole","Hardy","5501 Thomas Ave.","Oakland","CA","94618","925-708-0478","925-708-0478","n.alexhardy@gmail.com",0,"7/1/2016 0:00:00",1,0
 22,"Mary","Harper","2189 Trafalgar Place","Oakland","CA","94611","510-531-2842","510-326-0538","marywharper@comcast.net",1,"7/1/2016 0:00:00",1,1
-23,"Sharon","Harper","13690 Chalk Hill Road,","Healdsburg","CA","95448","7074330242","7074792789","agilijax@me.com",0,"7/1/2016 0:00:00",1,0
+23,"Sharon","Harper","13690 Chalk Hill Road","Healdsburg","CA","95448","7074330242","7074792789","agilijax@me.com",0,"7/1/2016 0:00:00",1,0
 24,"Joan","Helmes","7571 Meadowlark Dr ","Sebastopol","CA","95472","707-824-4857","707-386-3419","Jmhelmes@pacbell.net",0,"7/1/2016 0:00:00",1,0
 25,"Arlene","Hoffman","282 Panoramic Hwy","Mill Valley","CA","94941","415-383-7878",,"arlenehoffman@afhoffman.com",1,"7/1/2016 0:00:00",1,1
 26,"Karen","Jackson","36 Buena Vista Ave","Vallejo","CA","94590","707-644-8530",,"ctsesdmtbjbapj@hotmail.com",1,"7/1/2016 0:00:00",1,1
@@ -30,7 +30,7 @@
 29,"Ida","Alamuddin","74 Digital Drive #7","Novato","CA","94949","4158834607","4153202995","ida@karibouco.com",0,"7/1/2016 0:00:00",1,0
 31,"Marjorie","Levy","723 Ynez Cir","Danville","CA","94526",,"925-788-1549","mlevy67@gmail.com",1,"7/1/2016 0:00:00",1,1
 32,"Mary","Love","70 Manzanita Ave.","San Rafael","CA","94901","415-721-7944","510-334-6559","hoedog2@comcast.net",1,"7/1/2016 0:00:00",1,1
-33,"Elizabeth","Manning","7531 Desmond Ct,","Salinas","CA","93907","831 663 2908","831 206 2722","lzmnnng@gmail.com",0,"7/1/2016 0:00:00",1,0
+33,"Elizabeth","Manning","7531 Desmond Ct","Salinas","CA","93907","831 663 2908","831 206 2722","lzmnnng@gmail.com",0,"7/1/2016 0:00:00",1,0
 34,"Roxane","McKenna","5420 Chauplin Ave.","Atascadero","CA","93422","18057090435","18057090435","kennakats@gmail.com",1,"7/1/2016 0:00:00",1,1
 35,"Sandra Sue","Mocco","1729 Gumwood Drive","Concord","CA","94519","925-687-9087","925-285-1713","sandrasue13@me.com",0,"7/1/2016 0:00:00",1,0
 36,"Sue","Nelson","314 Tunnel Ave","Richmond","CA","94801","510.235-1376","510.406-6941","PtRichSue@att.net",1,"7/1/2016 0:00:00",1,1
@@ -55,7 +55,7 @@
 57,"Maura","Warnecke","4524 Melody Drive Apt A","Concord","CA","94521","9257853455","9257853455","maurawarnecke@gmail.com",0,"7/1/2016 0:00:00",1,0
 58,"Janet","Waters","PO Box 591","Alta","CA","95701","530-389-9033","530-263-2585","waterstervs@gmail.com",0,"7/1/2016 0:00:00",1,0
 59,"Christine","Wedel","1854 Judson Lane","Santa Rosa","CA","95401","7075781612","7075295779","pwedel66@sbcglobal.net",0,"7/1/2016 0:00:00",1,0
-60,"Christa","Wendlandt","1011 ATHERTON ST,","Vallejo","CA","94590","7073739163","7073739163","hovistore@aol.com",0,"7/1/2016 0:00:00",1,0
+60,"Christa","Wendlandt","1011 ATHERTON ST","Vallejo","CA","94590","7073739163","7073739163","hovistore@aol.com",0,"7/1/2016 0:00:00",1,0
 61,"Ginny","Pavlakovich","1155 Clubhouse Drive","Santa Maria","CA","93455","8059355512","8057200977","pavfam2x2@comcast.net",1,"7/1/2016 0:00:00",1,1
 62,"Susan","Machado","361 N Las Flores","Nipoma","CA","93444","8059294775",,"susanmdobergal@charter.net",1,"7/1/2016 0:00:00",1,1
 63,"Olga","Maderych","P.O. Box 323","Mi-Wuk Village","CA","95346","6504837421","6504737421","irinam1@yanoo.com",0,,1,0

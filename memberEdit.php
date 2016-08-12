@@ -274,10 +274,10 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 		<input type='hidden' id='apassword_id' name='apassword' value='<?=$member->password?>'>
 		<div class="form-group">
 			<label class="col-md-4 control-label"
-				   for="joined_id">Joined</label>  
+				   for="anniversary_id">Anniversary</label>  
 			<div class="col-md-5">
-				<input id="joined_id" name="joined" type="text"
-					class="form-control input-lg" value="<?=$member->joined?>">
+				<input id="anniversary_id" name="anniversary" type="text"
+					class="form-control input-lg" value="<?=$member->anniversary?>">
 			</div>
 		</div>
 		<div class="form-group">
