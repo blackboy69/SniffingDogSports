@@ -33,8 +33,8 @@ $_SESSION['prior'] = "memberList";
 						<th>Edit</th>
 						<th>#</th>
 						<th>Type</th>
-						<th>Last Name</th>
 						<th>First Name</th>
+						<th>Last Name</th>
 						<th>City</th>
 						<th>State</th>
 						<th>Phone</th>

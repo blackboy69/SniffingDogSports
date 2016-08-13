@@ -44,7 +44,7 @@ include_once("classes/SDS.php");
 		<button class="btn btn-lg btn-success"
 			onclick="dispatcher('contentSection','login')"
 			title="Click to Login as a Member"><span
-			class="glyphicon glyphicon-lock"></span> Login</button>
+			class="glyphicon glyphicon-log-in"></span> Login</button>
 	</p>
 	<p>&nbsp;</p>
 </div></div>

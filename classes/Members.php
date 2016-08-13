@@ -61,8 +61,8 @@ public static function fetchByEmail($email=null) {
  * note: each row contains these columns
  *	member			: member ID
  *	type			: member type (Member,Administrator,Developer,etc.)
- *	lastname		: member last name
  *	firstname		: member first name
+ *	lastname		: member last name
  *	city			: member city
  *	state			: member state
  *	phone			: member home or mobile phone
@@ -73,7 +73,7 @@ public static function fetchByEmail($email=null) {
 public static function summaryList() {
 	global $db;
 	return $db->fetchArrays("
-		SELECT `member`,`type`,`lastname`,`firstname`,`city`,`state`,
+		SELECT `member`,`type`,`firstname`,`lastname`,`city`,`state`,
 			   `homephone`,`mobilephone`,`anniversary`
 		FROM sds.members
 		ORDER BY `member` ASC
