@@ -305,6 +305,8 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 
 <? } ?>
 
+		<input type="hidden" id="flags_id" name="flags" value="<?=$member->flags?>">
+		
 		<div class="form-group">
 			<div class="col-md-8" style="text-align:center;">
 				<button type="submit" id="submitID" name="update"
