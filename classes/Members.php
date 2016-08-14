@@ -7,10 +7,6 @@
 
 class Members extends Container {
 
-	const	RenewalNoticeSent		= 0b0000000000000001;
-	const	AccountInfoSent			= 0b0000000000000010;
-	const	Dues_2016_2017			= 0b0000000000000100;
-	
 	public	$database	= "sds";
 	public	$table		= "members";
 
@@ -37,6 +33,13 @@ class Members extends Container {
 		"Mr",
 		"Mrs",
 		"Ms"
+		);
+
+// member flags/switches:
+	public static $flags = array(
+		'Renewal Notice Sent'		=> 0x0001,
+		'Account Info Sent'			=> 0x0002,
+		'Dues 2016-2017'			=> 0x0004
 		);
 
 /**
@@ -119,51 +122,24 @@ public function verifyPassword($password) {
 	}
 
 /**
- * check is Dues paid for 2016-2017
+ * set a flag/switch bit on
  * 
+ * @param string $tag			: key of boolean value in array
+ */
+public function setFlag($tag,$value=1) {
+	$bits = self::$flags[$tag];
+	$this->flags &= (-1 ^ $bits);
+	$this->flags |= ($value * $bits);
+	}
+
+/**
+ * test if a flag/switch bit is on
+ * 
+ * @param string $tag			: key of boolean value in array
  * @return boolean				: true or false
  */
-public function isDues_2016_2017() {
-	return ($this->flags & self::Dues_2016_2017) ? true : false;
-	}
-
-/**
- * set the flag for Dues paid for 2016-2017
- */
-public function setDues_2016_2017() {
-	$this->flags |= self::Dues_2016_2017;
-	}
-
-/**
- * check if a Renewal Notice was sent
- * 
- * @return boolean				: true or false
- */
-public function isRenewalNoticeSent() {
-	return ($this->flags & self::RenewalNoticeSent) ? true : false;
-	}
-
-/**
- * set the flag for Renewal Notice Sent
- */
-public function setRenewalNoticeSent() {
-	$this->flags |= self::RenewalNoticeSent;
-	}
-
-/**
- * check if Account Info was Sent
- * 
- * @return boolean				: true or false
- */
-public function isAccountInfoSent() {
-	return ($this->flags & self::AccountInfoSent) ? true : false;
-	}
-
-/**
- * set the flag for Account Info Sent
- */
-public function setAccountInfoSent() {
-	$this->flags |= self::AccountInfoSent;
+public function isFlagSet($tag) {
+	return ($this->flags & self::$flags[$tag]) ? true : false;
 	}
 
 }

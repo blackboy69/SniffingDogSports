@@ -18,6 +18,12 @@ if ($_REQUEST['email']) {
 	$formSubmitted = true;
 	$member = new Members($_REQUEST['member']);
 	$member->merge($_REQUEST);
+	$member->flags = 0;
+	foreach (Members::$flags as $tag=>$value) {
+		$formtag = preg_replace('/\s/','_',$tag);
+		if ($_REQUEST[$formtag])
+			$member->setFlag($tag);
+		}
 	$member->store();
 	$_SESSION['member'] = $member->member;
  	}
@@ -294,6 +300,25 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 					class="form-control input-lg" value="<?=$member->charge?>">
 			</div>
 		</div>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label">Flags / Switches</label>
+			<div class="col-md-5" style="color:steelblue">
+				<?php
+				foreach (Members::$flags as $tag=>$value) {
+					$checked = ($member->flags & $value) ? " checked" : "";
+					echo "<div class='checkbox'>",
+						 "<label>",
+						 "<input type='checkbox' name='{$tag}' value='1'",
+						 " style='width:20px;height:20px;' {$checked}>",
+						 "&nbsp;{$tag}",
+						 "</label>",
+						 "</div>\n";
+					}
+				?>
+			</div>
+		</div>
+
 		<div class="form-group">
 			<label class="col-md-4 control-label"
 				   for="notes_id">Notes</label>

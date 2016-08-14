@@ -77,10 +77,10 @@ function processInputLine($buffer) {
 	$member->email = prepareString($fields[9]);
 	$member->password = "nosework";
 	$member->anniversary = prepareDate($fields[11]);
-	if ($fields[10]) $member->setRenewalNoticeSent();
-	if ($fields[12]) $member->setAccountInfoSent();
-	if ($fields[13]) $member->setDues_2016_2017();
-	if ($member->isDues_2016_2017())
+	if ($fields[10]) $member->setFlag('Renewal Notice Sent');
+	if ($fields[12]) $member->setFlag('Account Info Sent');
+	if ($fields[13]) $member->setFlag('Dues 2016-2017');
+	if ($member->isFlagSet('Dues 2016-2017'))
 		$member->renewed = $member->anniversary;
 	$member->write();
 	return 1;
