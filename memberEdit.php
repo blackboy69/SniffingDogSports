@@ -245,8 +245,6 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			</div>
 		</div>
 
-<? if ($_SESSION['mode']!='a') { ?>
-
 		<div class="form-group">
 			<label class="col-md-4 control-label required"
 				   for="apassword_id">Password (again)</label>  
@@ -257,6 +255,7 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 		</div>
 
  <? if ($_SESSION['mode']=='p') { ?>
+ 
 		<div class="form-group">
 			<label class="col-md-4 control-label required"
 				   for="captcha_id">Enter the code</label>  
@@ -267,11 +266,10 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 					class="form-control input-lg" value="">
 			</div>
 		</div>
- <? } ?>
 
-<? } else { ?>
+<? } ?>
 
-		<input type='hidden' id='apassword_id' name='apassword' value='<?=$member->password?>'>
+<? if ($_SESSION['mode']=='a') { ?>
 		<div class="form-group">
 			<label class="col-md-4 control-label"
 				   for="anniversary_id">Anniversary</label>  
