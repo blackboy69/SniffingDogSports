@@ -84,6 +84,9 @@ function editMember(obj) {
 
 // initialize the member table display:
 
-$('#members_id').DataTable();
+$('#members_id').DataTable({
+	stateSave: true
+	});
 
+returnto = "memberList";
 </script>

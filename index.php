@@ -100,6 +100,7 @@ var mode = "<?=$_SESSION['mode']?>";		// current mode: null,p,m or a
 var member = "<?=$_SESSION['member']?>";	// current member id
 var dog = "<?=$_SESSION['dog']?>";			// current dog id
 var trial = "<?=$_SESSION['trial']?>";		// current trial id
+var returnto =null;							// return to script
 
 // create a current date string:
 
@@ -138,10 +139,13 @@ function dispatcher(destination,source,passdata) {
 	section.load(scriptName,passdata);
 	}
 
-// return to the home page for the mode in use:
+// return to the home or former page for the mode in use:
 
 function returnHome() {
 	var homePage;
+	if (returnto)
+		homePage = returnto;
+	else
 	if (mode == 'p')
 		homePage = 'publicSplash';
 	else

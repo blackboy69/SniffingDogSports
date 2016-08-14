@@ -165,7 +165,7 @@ include_once("classes/SDS.php");
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?=$member->fullname()." [admin]"?></a>
+			<a class="navbar-brand" href="#"><?=$boss->fullname()." [admin]"?></a>
 		</div>
     <div class="collapse navbar-collapse" id="adminNavbar">
 		<ul class="nav navbar-nav">

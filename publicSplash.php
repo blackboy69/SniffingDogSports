@@ -48,3 +48,7 @@ include_once("classes/SDS.php");
 	</p>
 	<p>&nbsp;</p>
 </div></div>
+
+<script type="text/javascript">
+	returnto = "publicSplash";
+</script>

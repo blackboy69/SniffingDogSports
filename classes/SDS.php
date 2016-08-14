@@ -53,6 +53,10 @@ if (isset($_REQUEST['dog']))
 if (isset($_REQUEST['trial']))
 	$_SESSION['trial'] = $_REQUEST['trial'];
 
+// if we have a session boss (administrator) load their profile
+if ($_SESSION['boss'])
+	$boss = new Members($_SESSION['boss']);
+
 // if we have a logged-in member, load their profile
 if ($_SESSION['member']) {
 	$member = new Members($_SESSION['member']);

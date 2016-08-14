@@ -51,3 +51,7 @@ include_once("classes/SDS.php");
 		<p>&nbsp;</p>
 	</div>
 </div>
+
+<script type="text/javascript">
+	returnto = "adminSummary";
+</script>
