@@ -103,7 +103,7 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 				<div class="input-group">
 					<span class="input-group-addon">Membership #</span>
 					<input id="member_id" name="member" class="form-control"
-						value="<?=$member->member?>" type="text" readonly>
+						value="<?=$member->member?>" type="text">
 				</div>
 			</div>
 		</div>
@@ -150,7 +150,7 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 	<input type="hidden" id="member_id" name="member" value="<?=$member->member?>">
 	<input type="hidden" id="referenced_id" name="referenced">
 	<input type="hidden" id="type_id" name="type" value="Member">
-	<input type="hidden" id="status_id" name="status" value="Pending">
+	<input type="hidden" id="status_id" name="status" value="<?=$member->status?>">
 
 <? } ?>
 

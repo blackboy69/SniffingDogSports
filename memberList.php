@@ -10,9 +10,7 @@ $_SESSION['prior'] = "memberList";
 ?>
 
 <div class="plaque">
-	<div class="headline">
-		Member Listing
-	</div>
+	<div class="headline">Member Listing</div>
 
 	<div class="content">
 
@@ -68,7 +66,6 @@ $_SESSION['prior'] = "memberList";
 			</table>
 		</div>
 	</div>
-
 	</div>
 </div>
 
