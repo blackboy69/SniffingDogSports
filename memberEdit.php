@@ -260,6 +260,35 @@ $referenced = Date::toExternal($member->referenced,LONGDATE);
 			</div>
 		</div>
 
+		<div class="form-group">
+			<label class="col-md-4 control-label">Your dogs:</label>
+			<div class="col-md-7">
+				<table id="dogsTable" class="table table-striped"
+					   style="border:1px solid;background-color:gainsboro;">
+					<thead><tr><th>Call name</th><th>Reg. name</th>
+						<th>Breed</th><th>Notes</th></tr></thead>
+					<tbody>
+					<?php
+						$dogs = Dogs::getMemberDogs($member->member);
+						foreach ($dogs as $dog) {
+							echo
+								"<tr data-member='{$dog->member}' data-dog='{$dog->dog}'>",
+								"<td>{$dog->callname}</td>",
+								"<td>{$dog->regname}</td>",
+								"<td>{$dog->breed}</td>",
+								"<td>{$dog->notes}</td>",
+								"</tr>\n";
+							}
+						echo
+							"<tr id='newDog' data-member='{$member->member}' data-dog=''>",
+							"<td>- Add -</td><td></td><td></td><td></td>",
+							"</tr>\n";
+					?>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
  <? if ($_SESSION['mode']=='p') { ?>
  
 		<div class="form-group">
@@ -405,6 +434,10 @@ function memberFormSubmission(aform) {
 	dispatcher('contentSection','memberEdit',f.serializeArray());
 	}
 
+$('#dogsTable').editableTableWidget();
+$('#newDog td:eq(0)').change(function(){
+	// copy the son-of-a-bitch:
+	});
 $('#salutation_id').focus();
 
 </script>
